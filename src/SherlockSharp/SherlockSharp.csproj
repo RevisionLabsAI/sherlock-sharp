@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>SherlockSharp</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Sherlock Project (C# port by SherlockSharp)</Authors>
+    <Description>C# library to check username availability across selected services using Sherlock data.</Description>
+    <RepositoryUrl>https://github.com/your-org/SherlockSharp</RepositoryUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\\..\\sherlock_project\\resources\\data.json" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>

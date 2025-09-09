@@ -1,47 +1,79 @@
-# Virtual Environments
-venv/
+# ---- C# / .NET build outputs ----
 bin/
-lib/
-pyvenv.cfg
-poetry.lock
+obj/
+[Bb]uild/
+[Ll]og/
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
 
-# Regression Testing
-.coverage
-.tox/
+# NuGet
+*.nupkg
+*.snupkg
+# Packages folder (legacy)
+packages/
+# NuGet v3 cache
+~/.nuget/packages/
 
-# Editor Configurations
-.vscode/
+# Visual Studio / MSBuild
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.user
+*.rsuser
+
+# Launch settings and environment files
+launchSettings.json
+*.pubxml
+*.pubxml.user
+
+# Rider / ReSharper / JetBrains
 .idea/
+.idea.*
+.ReSharper*/
+*_ReSharper*/
+*.DotSettings.user
 
-# Python
-__pycache__/
+# VS Code
+.vscode/
+.history/
 
-# Pip
-src/
+# Coverage tools
+coverage/
+.coverage/
+lcov.info
+coverage.cobertura.xml
 
-# Devel, Build, and Installation
-*.egg-info/
-dist/**
+# Artifacts
+artifacts/
+out/
+dist/
 
-# Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb
-
-# Output files, except requirements.txt
-*.txt
-!requirements.txt
-
-# Comma-Separated Values (CSV) Reports
-*.csv
-
-#XLSX Reports
-*.xlsx
-
-# Excluded sites list
-tests/.excluded_sites
-
-# MacOS Folder Metadata File
+# OS junk
 .DS_Store
+Thumbs.db
 
-# Vim swap files
-*.swp
+# Logs
+*.log
+
+# Python bits (repo contains docs/pyproject and pytest)
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.tox/
+.venv/
+venv/
+
+# Docker
+*.pid
+
+# Local tooling
+.env
+.env.*
+
+# Rider solution settings cache (keep repository-shared .DotSettings if added deliberately)
+*.sln.DotSettings.user

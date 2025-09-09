@@ -36,6 +36,21 @@ public sealed class SherlockClient : IDisposable
         }
     }
 
+    // Internal testing-only constructor allowing services injection without touching embedded resources.
+    internal SherlockClient(IEnumerable<string>? services, TimeSpan? timeout, bool includeNsfw, HttpMessageHandler? handler, IReadOnlyDictionary<string, ServiceDefinition> servicesOverride)
+    {
+        _includeNsfw = includeNsfw;
+        _http = handler != null ? new HttpClient(handler) : new HttpClient();
+        _http.Timeout = timeout ?? TimeSpan.FromSeconds(30);
+        _http.DefaultRequestHeaders.UserAgent.ParseAdd("SherlockSharp/0.1 (+https://github.com/your-org/SherlockSharp)");
+        _services = servicesOverride ?? throw new ArgumentNullException(nameof(servicesOverride));
+        _selected = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        if (services != null)
+        {
+            foreach (var s in services) _selected.Add(s);
+        }
+    }
+
     /// <summary>
     /// Static convenience call without managing a client instance.
     /// </summary>

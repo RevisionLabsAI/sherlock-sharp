@@ -12,6 +12,6 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\SherlockSharp\SherlockSharp.csproj" />
+    <ProjectReference Include="..\SherlockSharp\SherlockSharp.csproj" />
   </ItemGroup>
 </Project>

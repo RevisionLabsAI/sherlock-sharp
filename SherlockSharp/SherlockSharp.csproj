@@ -1,18 +1,41 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- NuGet metadata -->
     <PackageId>SherlockSharp</PackageId>
     <Version>0.1.0</Version>
     <Authors>Sherlock Project (C# port by SherlockSharp)</Authors>
     <Description>C# library to check username availability across selected services using Sherlock data.</Description>
-    <RepositoryUrl>https://github.com/your-org/SherlockSharp</RepositoryUrl>
+    <PackageTags>username;availability;Sherlock;http;profiles</PackageTags>
+    <RepositoryUrl>https://github.com/ACTUAL-ORG-OR-USER/SherlockSharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/ACTUAL-ORG-OR-USER/SherlockSharp</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+
+    <!-- SourceLink & symbols -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <ContinuousIntegrationBuild Condition=" '$(GITHUB_ACTIONS)' == 'true' ">true</ContinuousIntegrationBuild>
   </PropertyGroup>
+
   <ItemGroup>
-    <EmbeddedResource Include="..\\..\\sherlock_project\\resources\\data.json" />
-    <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
+    <!-- Correct embedded data.json path -->
+    <EmbeddedResource Include="Resources\data.json" />
+
+    <!-- Pack README and LICENSE into the root of the package -->
+    <None Include="..\README.md" Pack="true" PackagePath="" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
   </ItemGroup>
 </Project>

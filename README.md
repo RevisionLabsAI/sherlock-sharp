@@ -9,6 +9,7 @@ Quick start
 
 Example
 
+```csharp
 // Static one-off check
 var results = await SherlockSharp.SherlockClient.CheckAsync("user123", new[]{"GitHub","Twitter"});
 foreach (var r in results)
@@ -19,6 +20,7 @@ foreach (var r in results)
 // Reusable client with all non-NSFW services and a 15s timeout
 using var client = new SherlockSharp.SherlockClient(timeout: TimeSpan.FromSeconds(15));
 var many = await client.CheckManyAsync(new[]{"alice","bob"});
+```
 
 API surface
 

@@ -3,6 +3,7 @@
   "Avizo": {
     "errorType": "response_url",
     "errorUrl": "https://www.avizo.cz/",
+    "category": "e-commerce",
     "url": "https://www.avizo.cz/{}/",
     "urlMain": "https://www.avizo.cz/",
     "username_claimed": "blue"
@@ -10,6 +11,7 @@
   "Bazar.cz": {
     "errorType": "response_url",
     "errorUrl": "https://www.bazar.cz/error404.aspx",
+    "category": "e-commerce",
     "url": "https://www.bazar.cz/{}/",
     "urlMain": "https://www.bazar.cz/",
     "username_claimed": "pianina"
@@ -18,6 +20,7 @@
     "errorMsg": "La page que vous essayez",
     "errorType": "message",
     "regexCheck": "[a-z0-9]{4,16}",
+    "category": "e-commerce",
     "url": "https://www.dealabs.com/profile/{}",
     "urlMain": "https://www.dealabs.com/",
     "username_claimed": "blue"
@@ -25,12 +28,14 @@
   "Empretienda AR": {
     "__comment__": "Note that Error Connecting responses may be indicative of unclaimed handles",
     "errorType": "status_code",
+    "category": "e-commerce",
     "url": "https://{}.empretienda.com.ar",
     "urlMain": "https://empretienda.com",
     "username_claimed": "camalote"
   },
   "Envato Forum": {
     "errorType": "status_code",
+    "category": "e-commerce",
     "url": "https://forums.envato.com/u/{}",
     "urlMain": "https://forums.envato.com/",
     "username_claimed": "enabled"
@@ -38,6 +43,7 @@
   "Grailed": {
     "errorType": "response_url",
     "errorUrl": "https://www.grailed.com/{}",
+    "category": "e-commerce",
     "url": "https://www.grailed.com/{}",
     "urlMain": "https://www.grailed.com/",
     "username_claimed": "blue"
@@ -45,23 +51,27 @@
   "PepperIT": {
     "errorMsg": "La pagina che hai provato a raggiungere non si trova qui",
     "errorType": "message",
+    "category": "e-commerce",
     "url": "https://www.pepper.it/profile/{}/overview",
     "urlMain": "https://www.pepper.it",
     "username_claimed": "asoluinostrisca"
   },
   "Sbazar.cz": {
     "errorType": "status_code",
+    "category": "e-commerce",
     "url": "https://www.sbazar.cz/{}",
     "urlMain": "https://www.sbazar.cz/",
     "username_claimed": "blue"
   },
   "SWAPD": {
     "errorType": "status_code",
+    "category": "e-commerce",
     "url": "https://swapd.co/u/{}",
     "urlMain": "https://swapd.co/",
     "username_claimed": "swapd"
   },
   "Tiendanube": {
+    "category": "e-commerce",
     "url": "https://{}.mitiendanube.com/",
     "urlMain": "https://www.tiendanube.com/",
     "errorType": "status_code",
@@ -69,6 +79,7 @@
   },
   "mercadolivre": {
     "errorType": "status_code",
+    "category": "e-commerce",
     "url": "https://www.mercadolivre.com.br/perfil/{}",
     "urlMain": "https://www.mercadolivre.com.br",
     "username_claimed": "blue"

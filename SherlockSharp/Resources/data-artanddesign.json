@@ -2,24 +2,28 @@
   "$schema": "data.schema.json",
   "2Dimensions": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "url": "https://2Dimensions.com/a/{}",
     "urlMain": "https://2Dimensions.com/",
     "username_claimed": "blue"
   },
   "Behance": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "url": "https://www.behance.net/{}",
     "urlMain": "https://www.behance.net/",
     "username_claimed": "blue"
   },
   "Blipfoto": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "url": "https://www.blipfoto.com/{}",
     "urlMain": "https://www.blipfoto.com/",
     "username_claimed": "blue"
   },
   "CGTrader": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "regexCheck": "^[^.]*?$",
     "url": "https://www.cgtrader.com/{}",
     "urlMain": "https://www.cgtrader.com",
@@ -28,6 +32,7 @@
   "Carbonmade": {
     "errorType": "response_url",
     "errorUrl": "https://carbonmade.com/fourohfour?domain={}.carbonmade.com",
+    "category": "art-and-design",
     "regexCheck": "^[\\w@-]+?$",
     "url": "https://{}.carbonmade.com",
     "urlMain": "https://carbonmade.com/",
@@ -35,6 +40,7 @@
   },
   "ColourLovers": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "url": "https://www.colourlovers.com/lover/{}",
     "urlMain": "https://www.colourlovers.com/",
     "username_claimed": "blue"
@@ -42,6 +48,7 @@
   "Contently": {
     "errorType": "response_url",
     "errorUrl": "https://contently.com",
+    "category": "art-and-design",
     "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
     "url": "https://{}.contently.com/",
     "urlMain": "https://contently.com/",
@@ -49,12 +56,14 @@
   },
   "Coroflot": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "url": "https://www.coroflot.com/{}",
     "urlMain": "https://coroflot.com/",
     "username_claimed": "blue"
   },
   "Crevado": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "regexCheck": "^[\\w@-]+?$",
     "url": "https://{}.crevado.com",
     "urlMain": "https://crevado.com/",
@@ -63,6 +72,7 @@
   "Cults3D": {
     "errorMsg": "Oh dear, this page is not working!",
     "errorType": "message",
+    "category": "art-and-design",
     "url": "https://cults3d.com/en/users/{}/creations",
     "urlMain": "https://cults3d.com/en",
     "username_claimed": "brown"
@@ -70,6 +80,7 @@
   "Dribbble": {
     "errorMsg": "Whoops, that page is gone.",
     "errorType": "message",
+    "category": "art-and-design",
     "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
     "url": "https://dribbble.com/{}",
     "urlMain": "https://dribbble.com/",
@@ -77,12 +88,14 @@
   },
   "EyeEm": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "url": "https://www.eyeem.com/u/{}",
     "urlMain": "https://www.eyeem.com/",
     "username_claimed": "blue"
   },
   "Exposure": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "regexCheck": "^[a-zA-Z0-9-]{1,63}$",
     "url": "https://{}.exposure.co/",
     "urlMain": "https://exposure.co/",
@@ -90,42 +103,49 @@
   },
   "Icons8 Community": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "url": "https://community.icons8.com/u/{}/summary",
     "urlMain": "https://community.icons8.com/",
     "username_claimed": "thefourCraft"
   },
   "Issuu": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "url": "https://issuu.com/{}",
     "urlMain": "https://issuu.com/",
     "username_claimed": "jenny"
   },
   "LottieFiles": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "url": "https://lottiefiles.com/{}",
     "urlMain": "https://lottiefiles.com/",
     "username_claimed": "lottiefiles"
   },
   "MyMiniFactory": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "url": "https://www.myminifactory.com/users/{}",
     "urlMain": "https://www.myminifactory.com/",
     "username_claimed": "blue"
   },
   "Redbubble": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "url": "https://www.redbubble.com/people/{}",
     "urlMain": "https://www.redbubble.com/",
     "username_claimed": "blue"
   },
   "Sketchfab": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "url": "https://sketchfab.com/{}",
     "urlMain": "https://sketchfab.com/",
     "username_claimed": "blue"
   },
   "SmugMug": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "regexCheck": "^[a-zA-Z]{1,35}$",
     "url": "https://{}.smugmug.com",
     "urlMain": "https://smugmug.com",
@@ -133,12 +153,14 @@
   },
   "ThemeForest": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "url": "https://themeforest.net/user/{}",
     "urlMain": "https://themeforest.net/",
     "username_claimed": "user"
   },
   "Unsplash": {
     "errorType": "status_code",
+    "category": "art-and-design",
     "regexCheck": "^[a-z0-9_]{1,60}$",
     "url": "https://unsplash.com/@{}",
     "urlMain": "https://unsplash.com/",

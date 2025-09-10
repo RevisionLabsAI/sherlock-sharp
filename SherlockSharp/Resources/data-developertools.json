@@ -2,18 +2,21 @@
   "$schema": "data.schema.json",
   "Asciinema": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://asciinema.org/~{}",
     "urlMain": "https://asciinema.org",
     "username_claimed": "red"
   },
   "Ask Fedora": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://ask.fedoraproject.org/u/{}",
     "urlMain": "https://ask.fedoraproject.org/",
     "username_claimed": "red"
   },
   "BioHacking": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://forum.dangerousthings.com/u/{}",
     "urlMain": "https://forum.dangerousthings.com/",
     "username_claimed": "blue"
@@ -21,6 +24,7 @@
   "BitBucket": {
     "errorType": "status_code",
     "regexCheck": "^[a-zA-Z0-9-_]{1,30}$",
+    "category": "developer-tools",
     "url": "https://bitbucket.org/{}/",
     "urlMain": "https://bitbucket.org/",
     "username_claimed": "white"
@@ -28,42 +32,49 @@
   "Bitwarden Forum": {
     "errorType": "status_code",
     "regexCheck": "^(?![.-])[a-zA-Z0-9_.-]{3,20}$",
+    "category": "developer-tools",
     "url": "https://community.bitwarden.com/u/{}/summary",
     "urlMain": "https://bitwarden.com/",
     "username_claimed": "blue"
   },
   "BraveCommunity": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://community.brave.com/u/{}/",
     "urlMain": "https://community.brave.com/",
     "username_claimed": "blue"
   },
   "BugCrowd": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://bugcrowd.com/{}",
     "urlMain": "https://bugcrowd.com/",
     "username_claimed": "ppfeister"
   },
   "CSSBattle": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://cssbattle.dev/player/{}",
     "urlMain": "https://cssbattle.dev",
     "username_claimed": "beo"
   },
   "Caddy Community": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://caddy.community/u/{}/summary",
     "urlMain": "https://caddy.community/",
     "username_claimed": "taako_magnusen"
   },
   "CloudflareCommunity": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://community.cloudflare.com/u/{}",
     "urlMain": "https://community.cloudflare.com/",
     "username_claimed": "blue"
   },
   "Codeberg": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://codeberg.org/{}",
     "urlMain": "https://codeberg.org/",
     "username_claimed": "blue"
@@ -71,12 +82,14 @@
   "Codecademy": {
     "errorMsg": "This profile could not be found",
     "errorType": "message",
+    "category": "developer-tools",
     "url": "https://www.codecademy.com/profiles/{}",
     "urlMain": "https://www.codecademy.com/",
     "username_claimed": "blue"
   },
   "Codepen": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://codepen.io/{}",
     "urlMain": "https://codepen.io/",
     "username_claimed": "blue"
@@ -85,12 +98,14 @@
     "errorMsg": "not a registered member",
     "errorType": "message",
     "regexCheck": "^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$",
+    "category": "developer-tools",
     "url": "https://profile.codersrank.io/user/{}/",
     "urlMain": "https://codersrank.io/",
     "username_claimed": "rootkit7628"
   },
   "Coderwall": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://coderwall.com/{}",
     "urlMain": "https://coderwall.com",
     "username_claimed": "hacker"
@@ -98,12 +113,14 @@
   "Crowdin": {
     "errorType": "status_code",
     "regexCheck": "^[a-zA-Z0-9._-]{2,255}$",
+    "category": "developer-tools",
     "url": "https://crowdin.com/profile/{}",
     "urlMain": "https://crowdin.com/",
     "username_claimed": "blue"
   },
   "Cryptomator Forum": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://community.cryptomator.org/u/{}",
     "urlMain": "https://community.cryptomator.org/",
     "username_claimed": "michael"
@@ -113,6 +130,7 @@
     "errorType": "message",
     "regexCheck": "^[^\\/:*?\"<>|@]{3,50}$",
     "request_method": "GET",
+    "category": "developer-tools",
     "url": "https://cyberdefenders.org/p/{}",
     "urlMain": "https://cyberdefenders.org/",
     "username_claimed": "mlohn"
@@ -120,18 +138,21 @@
   "DEV Community": {
     "errorType": "status_code",
     "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
+    "category": "developer-tools",
     "url": "https://dev.to/{}",
     "urlMain": "https://dev.to/",
     "username_claimed": "blue"
   },
   "Discuss.Elastic.co": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://discuss.elastic.co/u/{}",
     "urlMain": "https://discuss.elastic.co/",
     "username_claimed": "blue"
   },
   "Docker Hub": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://hub.docker.com/u/{}/",
     "urlMain": "https://hub.docker.com/",
     "urlProbe": "https://hub.docker.com/v2/users/{}/",
@@ -139,6 +160,7 @@
   },
   "F3.cool": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://f3.cool/{}/",
     "urlMain": "https://f3.cool/",
     "username_claimed": "blue"
@@ -147,12 +169,14 @@
     "errorType": "response_url",
     "errorUrl": "https://gitlab.gnome.org/{}",
     "regexCheck": "^(?!-)[a-zA-Z0-9_.-]{2,255}(?<!\\.)$",
+    "category": "developer-tools",
     "url": "https://gitlab.gnome.org/{}",
     "urlMain": "https://gitlab.gnome.org/",
     "username_claimed": "adam"
   },
   "GeeksforGeeks": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://auth.geeksforgeeks.org/user/{}",
     "urlMain": "https://www.geeksforgeeks.org/",
     "username_claimed": "adam"
@@ -160,18 +184,21 @@
   "GitBook": {
     "errorType": "status_code",
     "regexCheck": "^[\\w@-]+?$",
+    "category": "developer-tools",
     "url": "https://{}.gitbook.io/",
     "urlMain": "https://gitbook.com/",
     "username_claimed": "gitbook"
   },
   "Gitea": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://gitea.com/{}",
     "urlMain": "https://gitea.com/",
     "username_claimed": "xorm"
   },
   "Gitee": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://gitee.com/{}",
     "urlMain": "https://gitee.com/",
     "username_claimed": "wizzer"
@@ -179,12 +206,14 @@
   "Gradle": {
     "errorType": "status_code",
     "regexCheck": "^(?!-)[a-zA-Z0-9-]{3,}(?<!-)$",
+    "category": "developer-tools",
     "url": "https://plugins.gradle.org/u/{}",
     "urlMain": "https://gradle.org/",
     "username_claimed": "jetbrains"
   },
   "HackTheBox": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://forum.hackthebox.com/u/{}",
     "urlMain": "https://forum.hackthebox.com/",
     "username_claimed": "angar"
@@ -193,6 +222,7 @@
     "errorMsg": "Page not found",
     "errorType": "message",
     "regexCheck": "^[\\w-]{,34}$",
+    "category": "developer-tools",
     "url": "https://hackenproof.com/hackers/{}",
     "urlMain": "https://hackenproof.com/",
     "username_claimed": "blazezaria"
@@ -200,6 +230,7 @@
   "HackerEarth": {
     "errorMsg": "404. URL not found.",
     "errorType": "message",
+    "category": "developer-tools",
     "url": "https://hackerearth.com/@{}",
     "urlMain": "https://hackerearth.com/",
     "username_claimed": "naveennamani877"
@@ -207,6 +238,7 @@
   "HackerOne": {
     "errorMsg": "Page not found",
     "errorType": "message",
+    "category": "developer-tools",
     "url": "https://hackerone.com/{}",
     "urlMain": "https://hackerone.com/",
     "username_claimed": "stok"
@@ -215,12 +247,14 @@
     "errorMsg": "Something went wrong",
     "errorType": "message",
     "regexCheck": "^[^.]*?$",
+    "category": "developer-tools",
     "url": "https://hackerrank.com/{}",
     "urlMain": "https://hackerrank.com/",
     "username_claimed": "satznova"
   },
   "Hashnode": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://hashnode.com/@{}",
     "urlMain": "https://hashnode.com",
     "username_claimed": "blue"

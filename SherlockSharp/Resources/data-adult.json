@@ -3,6 +3,7 @@
     "errorMsg": "Amateur Porn Content Creators",
     "errorType": "message",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://apclips.com/{}",
     "urlMain": "https://apclips.com/",
     "username_claimed": "onlybbyraq"
@@ -11,6 +12,7 @@
     "errorMsg": "Page Not Found",
     "errorType": "message",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://admireme.vip/{}",
     "urlMain": "https://admireme.vip/",
     "username_claimed": "DemiDevil"
@@ -19,6 +21,7 @@
     "errorMsg": "Sell Used Panties",
     "errorType": "message",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://www.allthingsworn.com/profile/{}",
     "urlMain": "https://www.allthingsworn.com",
     "username_claimed": "pink"
@@ -26,6 +29,7 @@
   "BongaCams": {
     "errorType": "status_code",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://pt.bongacams.com/profile/{}",
     "urlMain": "https://pt.bongacams.com",
     "username_claimed": "asuna-black"
@@ -33,6 +37,7 @@
   "ChaturBate": {
     "errorType": "status_code",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://chaturbate.com/{}",
     "urlMain": "https://chaturbate.com",
     "username_claimed": "cute18cute"
@@ -40,6 +45,7 @@
   "Erome": {
     "errorType": "status_code",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://www.erome.com/{}",
     "urlMain": "https://www.erome.com/",
     "username_claimed": "bob"
@@ -48,6 +54,7 @@
     "errorMsg": "that user does not exist",
     "errorType": "message",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://www.forumophilia.com/profile.php?mode=viewprofile&u={}",
     "urlMain": "https://www.forumophilia.com/",
     "username_claimed": "bob"
@@ -55,6 +62,7 @@
   "furaffinity": {
     "errorMsg": "This user cannot be found.",
     "errorType": "message",
+    "category": "adult",
     "url": "https://www.furaffinity.net/user/{}",
     "urlMain": "https://www.furaffinity.net",
     "username_claimed": "jesus"
@@ -63,6 +71,7 @@
     "errorMsg": "Channel not found",
     "errorType": "message",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://www.heavy-r.com/user/{}",
     "urlMain": "https://www.heavy-r.com/",
     "username_claimed": "kilroy222"
@@ -71,6 +80,7 @@
     "errorMsg": "Not found",
     "errorType": "message",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://www.imagefap.com/profile/{}",
     "urlMain": "https://www.imagefap.com/",
     "username_claimed": "blue"
@@ -78,6 +88,7 @@
   "LushStories": {
     "errorType": "status_code",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://www.lushstories.com/profile/{}",
     "urlMain": "https://www.lushstories.com/",
     "username_claimed": "chris_brown"
@@ -86,6 +97,7 @@
     "errorMsg": "no longer a member",
     "errorType": "message",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://motherless.com/m/{}",
     "urlMain": "https://motherless.com/",
     "username_claimed": "hacker"
@@ -94,6 +106,7 @@
     "errorMsg": "Join Your Favorite Adult Stars",
     "errorType": "message",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://pocketstars.com/{}",
     "urlMain": "https://pocketstars.com/",
     "username_claimed": "hacker"
@@ -101,6 +114,7 @@
   "Pornhub": {
     "errorType": "status_code",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://pornhub.com/users/{}",
     "urlMain": "https://pornhub.com/",
     "username_claimed": "blue"
@@ -108,6 +122,7 @@
   "RedTube": {
     "errorType": "status_code",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://www.redtube.com/users/{}",
     "urlMain": "https://www.redtube.com/",
     "username_claimed": "hacker"
@@ -116,12 +131,14 @@
     "errorMsg": "OOPS! Houston, we have a problem",
     "errorType": "message",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://www.rockettube.com/{}",
     "urlMain": "https://www.rockettube.com/",
     "username_claimed": "Tatteddick5600"
   },
   "RoyalCams": {
     "errorType": "status_code",
+    "category": "adult",
     "url": "https://royalcams.com/profile/{}",
     "urlMain": "https://royalcams.com",
     "username_claimed": "asuna-black"
@@ -129,6 +146,7 @@
   "TnAFlix": {
     "errorType": "status_code",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://www.tnaflix.com/profile/{}",
     "urlMain": "https://www.tnaflix.com/",
     "username_claimed": "hacker"
@@ -136,6 +154,7 @@
   "Xvideos": {
     "errorType": "status_code",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://xvideos.com/profiles/{}",
     "urlMain": "https://xvideos.com/",
     "username_claimed": "blue"
@@ -143,6 +162,7 @@
   "YouPorn": {
     "errorType": "status_code",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://youporn.com/uservids/{}",
     "urlMain": "https://youporn.com",
     "username_claimed": "blue"
@@ -150,6 +170,7 @@
   "xHamster": {
     "errorType": "status_code",
     "isNSFW": true,
+    "category": "adult",
     "url": "https://xhamster.com/users/{}",
     "urlMain": "https://xhamster.com",
     "urlProbe": "https://xhamster.com/users/{}?old_browser=true",

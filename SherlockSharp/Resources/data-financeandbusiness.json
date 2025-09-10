@@ -2,6 +2,7 @@
   "$schema": "data.schema.json",
   "BiggerPockets": {
     "errorType": "status_code",
+    "category": "finance-and-business",
     "url": "https://www.biggerpockets.com/users/{}",
     "urlMain": "https://www.biggerpockets.com/",
     "username_claimed": "blue"
@@ -9,12 +10,14 @@
   "Career.habr": {
     "errorMsg": "<h1>Ошибка 404</h1>",
     "errorType": "message",
+    "category": "finance-and-business",
     "url": "https://career.habr.com/{}",
     "urlMain": "https://career.habr.com/",
     "username_claimed": "blue"
   },
   "Finanzfrage": {
     "errorType": "status_code",
+    "category": "finance-and-business",
     "url": "https://www.finanzfrage.net/nutzer/{}",
     "urlMain": "https://www.finanzfrage.net/",
     "username_claimed": "finanzfrage"
@@ -23,6 +26,7 @@
     "errorMsg": "<div class=\"icon_user_locked\"></div>",
     "errorType": "message",
     "regexCheck": "^((?!\\.).)*$",
+    "category": "finance-and-business",
     "url": "https://freelance.habr.com/freelancers/{}",
     "urlMain": "https://freelance.habr.com/",
     "username_claimed": "adam"
@@ -30,6 +34,7 @@
   "Freelancer": {
     "errorMsg": "\"users\":{}",
     "errorType": "message",
+    "category": "finance-and-business",
     "url": "https://www.freelancer.com/u/{}",
     "urlMain": "https://www.freelancer.com/",
     "urlProbe": "https://www.freelancer.com/api/users/0.1/users?usernames%5B%5D={}&compact=true",
@@ -38,36 +43,42 @@
   "TradingView": {
     "errorType": "status_code",
     "request_method": "GET",
+    "category": "finance-and-business",
     "url": "https://www.tradingview.com/u/{}/",
     "urlMain": "https://www.tradingview.com/",
     "username_claimed": "blue"
   },
   "Warrior Forum": {
     "errorType": "status_code",
+    "category": "finance-and-business",
     "url": "https://www.warriorforum.com/members/{}.html",
     "urlMain": "https://www.warriorforum.com/",
     "username_claimed": "blue"
   },
   "fl": {
     "errorType": "status_code",
+    "category": "finance-and-business",
     "url": "https://www.fl.ru/users/{}",
     "urlMain": "https://www.fl.ru/",
     "username_claimed": "blue"
   },
   "kwork": {
     "errorType": "status_code",
+    "category": "finance-and-business",
     "url": "https://kwork.ru/user/{}",
     "urlMain": "https://www.kwork.ru/",
     "username_claimed": "blue"
   },
   "leasehackr": {
     "errorType": "status_code",
+    "category": "finance-and-business",
     "url": "https://forum.leasehackr.com/u/{}/summary/",
     "urlMain": "https://forum.leasehackr.com/",
     "username_claimed": "adam"
   },
   "moikrug": {
     "errorType": "status_code",
+    "category": "finance-and-business",
     "url": "https://moikrug.ru/{}",
     "urlMain": "https://moikrug.ru/",
     "username_claimed": "blue"

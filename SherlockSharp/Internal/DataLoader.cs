@@ -20,26 +20,37 @@ internal static class DataLoader
     public static IReadOnlyDictionary<string, ServiceDefinition> LoadServices()
     {
         using var stream = GetEmbeddedDataJsonStream();
-        using var doc = JsonDocument.Parse(stream);
-        var root = doc.RootElement;
-        var dict = new Dictionary<string, ServiceDefinition>(StringComparer.OrdinalIgnoreCase);
-        foreach (var prop in root.EnumerateObject())
+        if (stream.CanSeek && stream.Length == 0)
         {
-            if (prop.NameEquals("$schema")) continue;
-            try
+            throw new InvalidDataException("Embedded resource data.json is empty. Ensure SherlockSharp/Resources/data.json contains valid JSON.");
+        }
+        try
+        {
+            using var doc = JsonDocument.Parse(stream);
+            var root = doc.RootElement;
+            var dict = new Dictionary<string, ServiceDefinition>(StringComparer.OrdinalIgnoreCase);
+            foreach (var prop in root.EnumerateObject())
             {
-                var sd = JsonSerializer.Deserialize<ServiceDefinition>(prop.Value.GetRawText(), Options);
-                if (sd != null && !string.IsNullOrWhiteSpace(sd.Url))
+                if (prop.NameEquals("$schema")) continue;
+                try
                 {
-                    dict[prop.Name] = sd;
+                    var sd = JsonSerializer.Deserialize<ServiceDefinition>(prop.Value.GetRawText(), Options);
+                    if (sd != null && !string.IsNullOrWhiteSpace(sd.Url))
+                    {
+                        dict[prop.Name] = sd;
+                    }
+                }
+                catch
+                {
+                    // Skip malformed entries in minimal MVP
                 }
             }
-            catch
-            {
-                // Skip malformed entries in minimal MVP
-            }
+            return dict;
         }
-        return dict;
+        catch (JsonException jex)
+        {
+            throw new InvalidDataException("Failed to parse embedded data.json. Ensure it contains valid JSON.", jex);
+        }
     }
 
     private static Stream GetEmbeddedDataJsonStream()

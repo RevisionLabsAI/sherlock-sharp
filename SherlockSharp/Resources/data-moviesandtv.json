@@ -1,0 +1,24 @@
+﻿{
+  "$schema": "data.schema.json",
+  "AniWorld": {
+    "errorMsg": "Dieses Profil ist nicht verfügbar",
+    "errorType": "message",
+    "url": "https://aniworld.to/user/profil/{}",
+    "urlMain": "https://aniworld.to/",
+    "username_claimed": "blue"
+  },
+  "Letterboxd": {
+    "errorMsg": "Sorry, we can't find the page you've requested.",
+    "errorType": "message",
+    "url": "https://letterboxd.com/{}",
+    "urlMain": "https://letterboxd.com/",
+    "username_claimed": "blue"
+  },
+  "Trakt": {
+    "errorType": "status_code",
+    "regexCheck": "^[^.]*$",
+    "url": "https://www.trakt.tv/users/{}",
+    "urlMain": "https://www.trakt.tv/",
+    "username_claimed": "blue"
+  }
+}

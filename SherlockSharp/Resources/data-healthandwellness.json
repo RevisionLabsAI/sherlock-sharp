@@ -1,0 +1,40 @@
+﻿{
+  "$schema": "data.schema.json",
+  "7Cups": {
+    "errorType": "status_code",
+    "url": "https://www.7cups.com/@{}",
+    "urlMain": "https://www.7cups.com/",
+    "username_claimed": "blue"
+  },
+  "Gesundheitsfrage": {
+    "errorType": "status_code",
+    "url": "https://www.gesundheitsfrage.net/nutzer/{}",
+    "urlMain": "https://www.gesundheitsfrage.net/",
+    "username_claimed": "gutefrage"
+  },
+  "Gutefrage": {
+    "errorType": "status_code",
+    "url": "https://www.gutefrage.net/nutzer/{}",
+    "urlMain": "https://www.gutefrage.net/",
+    "username_claimed": "gutefrage"
+  },
+  "Spells8": {
+    "errorType": "status_code",
+    "url": "https://forum.spells8.com/u/{}",
+    "urlMain": "https://spells8.com",
+    "username_claimed": "susurrus"
+  },
+  "Strava": {
+    "errorType": "status_code",
+    "regexCheck": "^[^.]*?$",
+    "url": "https://www.strava.com/athletes/{}",
+    "urlMain": "https://www.strava.com/",
+    "username_claimed": "blue"
+  },
+  "znanylekarz.pl": {
+    "errorType": "status_code",
+    "url": "https://www.znanylekarz.pl/{}",
+    "urlMain": "https://znanylekarz.pl",
+    "username_claimed": "janusz-nowak"
+  }
+}

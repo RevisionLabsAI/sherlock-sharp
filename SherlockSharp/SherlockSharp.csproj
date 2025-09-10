@@ -28,7 +28,6 @@
 
   <ItemGroup>
     <!-- Correct embedded data.json path -->
-    <EmbeddedResource Include="Resources\data.json" />
 
     <!-- Pack README and LICENSE into the root of the package -->
     <None Include="..\README.md" Pack="true" PackagePath="" />

@@ -1,0 +1,157 @@
+﻿{
+  "$schema": "data.schema.json",
+  "Bezuzyteczna": {
+    "errorType": "status_code",
+    "url": "https://bezuzyteczna.pl/uzytkownicy/{}",
+    "urlMain": "https://bezuzyteczna.pl",
+    "username_claimed": "Jackson"
+  },
+  "Houzz": {
+    "errorType": "status_code",
+    "url": "https://houzz.com/user/{}",
+    "urlMain": "https://houzz.com/",
+    "username_claimed": "blue"
+  },
+  "ImgUp.cz": {
+    "errorType": "status_code",
+    "url": "https://imgup.cz/{}",
+    "urlMain": "https://imgup.cz/",
+    "username_claimed": "adam"
+  },
+  "Jimdo": {
+    "errorType": "status_code",
+    "regexCheck": "^[\\w@-]+?$",
+    "url": "https://{}.jimdosite.com",
+    "urlMain": "https://jimdosite.com/",
+    "username_claimed": "jenny"
+  },
+  "NationStates Nation": {
+    "errorMsg": "Was this your nation? It may have ceased to exist due to inactivity, but can rise again!",
+    "errorType": "message",
+    "url": "https://nationstates.net/nation={}",
+    "urlMain": "https://nationstates.net",
+    "username_claimed": "the_holy_principality_of_saint_mark"
+  },
+  "NationStates Region": {
+    "errorMsg": "does not exist.",
+    "errorType": "message",
+    "url": "https://nationstates.net/region={}",
+    "urlMain": "https://nationstates.net",
+    "username_claimed": "the_west_pacific"
+  },
+  "Naver": {
+    "errorType": "status_code",
+    "url": "https://blog.naver.com/{}",
+    "urlMain": "https://naver.com",
+    "username_claimed": "blue"
+  },
+  "Needrom": {
+    "errorType": "status_code",
+    "url": "https://www.needrom.com/author/{}/",
+    "urlMain": "https://www.needrom.com/",
+    "username_claimed": "needrom"
+  },
+  "Rajce.net": {
+    "errorType": "status_code",
+    "regexCheck": "^[\\w@-]+?$",
+    "url": "https://{}.rajce.idnes.cz/",
+    "urlMain": "https://www.rajce.idnes.cz/",
+    "username_claimed": "blue"
+  },
+  "ShitpostBot5000": {
+    "errorType": "status_code",
+    "url": "https://www.shitpostbot.com/user/{}",
+    "urlMain": "https://www.shitpostbot.com/",
+    "username_claimed": "blue"
+  },
+  "Slant": {
+    "errorType": "status_code",
+    "regexCheck": "^.{2,32}$",
+    "url": "https://www.slant.co/users/{}",
+    "urlMain": "https://www.slant.co/",
+    "username_claimed": "blue"
+  },
+  "Topcoder": {
+    "errorType": "status_code",
+    "url": "https://profiles.topcoder.com/{}/",
+    "urlMain": "https://topcoder.com/",
+    "username_claimed": "USER",
+    "urlProbe": "https://api.topcoder.com/v5/members/{}",
+    "regexCheck": "[a-zA-Z0-9 ]"
+  },
+  "TrashboxRU": {
+    "errorType": "status_code",
+    "regexCheck": "^[A-Za-z0-9_-]{3,16}$",
+    "url": "https://trashbox.ru/users/{}",
+    "urlMain": "https://trashbox.ru/",
+    "username_claimed": "blue"
+  },
+  "Tuna": {
+    "errorType": "status_code",
+    "regexCheck": "^[a-z0-9]{4,40}$",
+    "url": "https://tuna.voicemod.net/user/{}",
+    "urlMain": "https://tuna.voicemod.net/",
+    "username_claimed": "bob"
+  },
+  "WebNode": {
+    "errorType": "status_code",
+    "regexCheck": "^[\\w@-]+?$",
+    "url": "https://{}.webnode.cz/",
+    "urlMain": "https://www.webnode.cz/",
+    "username_claimed": "radkabalcarova"
+  },
+  "Weebly": {
+    "errorType": "status_code",
+    "regexCheck": "^[a-zA-Z0-9-]{1,63}$",
+    "url": "https://{}.weebly.com/",
+    "urlMain": "https://weebly.com/",
+    "username_claimed": "blue"
+  },
+  "Wix": {
+    "errorType": "status_code",
+    "regexCheck": "^[\\w@-]+?$",
+    "url": "https://{}.wix.com",
+    "urlMain": "https://wix.com/",
+    "username_claimed": "support"
+  },
+  "d3RU": {
+    "errorType": "status_code",
+    "url": "https://d3.ru/user/{}/posts",
+    "urlMain": "https://d3.ru/",
+    "username_claimed": "blue"
+  },
+  "eGPU": {
+    "errorType": "status_code",
+    "url": "https://egpu.io/forums/profile/{}/",
+    "urlMain": "https://egpu.io/",
+    "username_claimed": "blue"
+  },
+  "igromania": {
+    "errorMsg": "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
+    "errorType": "message",
+    "url": "http://forum.igromania.ru/member.php?username={}",
+    "urlMain": "http://forum.igromania.ru/",
+    "username_claimed": "blue"
+  },
+  "jeuxvideo": {
+    "errorType": "status_code",
+    "request_method": "GET",
+    "url": "https://www.jeuxvideo.com/profil/{}",
+    "urlMain": "https://www.jeuxvideo.com",
+    "urlProbe": "https://www.jeuxvideo.com/profil/{}?mode=infos",
+    "username_claimed": "adam"
+  },
+  "phpRU": {
+    "errorMsg": "Указанный пользователь не найден. Пожалуйста, введите другое имя.",
+    "errorType": "message",
+    "url": "https://php.ru/forum/members/?username={}",
+    "urlMain": "https://php.ru/forum/",
+    "username_claimed": "apple"
+  },
+  "sessionize": {
+    "errorType": "status_code",
+    "url": "https://sessionize.com/{}",
+    "urlMain": "https://sessionize.com/",
+    "username_claimed": "jason-mayes"
+  }
+}

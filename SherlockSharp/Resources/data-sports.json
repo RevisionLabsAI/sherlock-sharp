@@ -1,0 +1,42 @@
+﻿{
+  "$schema": "data.schema.json",
+  "Championat": {
+    "errorType": "status_code",
+    "url": "https://www.championat.com/user/{}",
+    "urlMain": "https://www.championat.com/",
+    "username_claimed": "blue"
+  },
+  "Eintracht Frankfurt Forum": {
+    "errorType": "status_code",
+    "regexCheck": "^[^.]*?$",
+    "url": "https://community.eintracht.de/fans/{}",
+    "urlMain": "https://community.eintracht.de/",
+    "username_claimed": "mmammu"
+  },
+  "Football": {
+    "errorMsg": "Пользователь с таким именем не найден",
+    "errorType": "message",
+    "url": "https://www.rusfootball.info/user/{}/",
+    "urlMain": "https://www.rusfootball.info/",
+    "username_claimed": "solo87"
+  },
+  "Sportlerfrage": {
+    "errorType": "status_code",
+    "url": "https://www.sportlerfrage.net/nutzer/{}",
+    "urlMain": "https://www.sportlerfrage.net/",
+    "username_claimed": "sportlerfrage"
+  },
+  "SportsRU": {
+    "errorType": "status_code",
+    "url": "https://www.sports.ru/profile/{}/",
+    "urlMain": "https://www.sports.ru/",
+    "username_claimed": "blue"
+  },
+  "eintracht": {
+    "errorType": "status_code",
+    "regexCheck": "^[^.]*?$",
+    "url": "https://community.eintracht.de/fans/{}",
+    "urlMain": "https://eintracht.de",
+    "username_claimed": "blue"
+  }
+}

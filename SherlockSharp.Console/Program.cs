@@ -111,7 +111,25 @@ manyCmd.SetHandler(async (usernames, services, timeout, includeNsfw, json) =>
     }
 }, usernamesArg, servicesOption, timeoutOption, includeNsfwOption, jsonOption);
 
+var listCmd = new Command("list-sites", "Output a comma-separated list of available services (sites)");
+var includeNsfwListOption = new Option<bool>(aliases: new[] {"--include-nsfw"}, description: "Include NSFW services", getDefaultValue: () => false);
+listCmd.AddOption(includeNsfwListOption);
+listCmd.SetHandler((bool includeNsfw) =>
+{
+    try
+    {
+        var names = SherlockClient.GetServiceNames(includeNsfw);
+        Console.WriteLine(string.Join(",", names));
+    }
+    catch (Exception ex)
+    {
+        Console.Error.WriteLine($"Error: {ex.Message}");
+        Environment.ExitCode = 1;
+    }
+}, includeNsfwListOption);
+
 root.AddCommand(checkCmd);
 root.AddCommand(manyCmd);
+root.AddCommand(listCmd);
 
 return await root.InvokeAsync(args);

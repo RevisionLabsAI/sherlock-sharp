@@ -1,0 +1,88 @@
+﻿{
+  "$schema": "data.schema.json",
+  "Chaos": {
+    "errorType": "status_code",
+    "url": "https://chaos.social/@{}",
+    "urlMain": "https://chaos.social/",
+    "username_claimed": "ordnung"
+  },
+  "Chatujme.cz": {
+    "errorMsg": "Neexistující profil",
+    "errorType": "message",
+    "regexCheck": "^[a-zA-Z][a-zA-Z1-9_-]*$",
+    "url": "https://profil.chatujme.cz/{}",
+    "urlMain": "https://chatujme.cz/",
+    "username_claimed": "david"
+  },
+  "Choice Community": {
+    "errorType": "status_code",
+    "url": "https://choice.community/u/{}/summary",
+    "urlMain": "https://choice.community/",
+    "username_claimed": "gordon"
+  },
+  "Disqus": {
+    "errorType": "status_code",
+    "url": "https://disqus.com/{}",
+    "urlMain": "https://disqus.com/",
+    "username_claimed": "blue"
+  },
+  "Fosstodon": {
+    "errorType": "status_code",
+    "regexCheck": "^[a-zA-Z0-9_]{1,30}$",
+    "url": "https://fosstodon.org/@{}",
+    "urlMain": "https://fosstodon.org/",
+    "username_claimed": "blue"
+  },
+  "IRC-Galleria": {
+    "errorType": "response_url",
+    "errorUrl": "https://irc-galleria.net/users/search?username={}",
+    "url": "https://irc-galleria.net/user/{}",
+    "urlMain": "https://irc-galleria.net/",
+    "username_claimed": "appas"
+  },
+  "Kik": {
+    "errorMsg": "The page you requested was not found",
+    "errorType": "message",
+    "url": "https://kik.me/{}",
+    "urlMain": "http://kik.me/",
+    "urlProbe": "https://ws2.kik.com/user/{}",
+    "username_claimed": "blue"
+  },
+  "Tellonym.me": {
+    "errorType": "status_code",
+    "url": "https://tellonym.me/{}",
+    "urlMain": "https://tellonym.me/",
+    "username_claimed": "blue"
+  },
+  "chaos.social": {
+    "errorType": "status_code",
+    "url": "https://chaos.social/@{}",
+    "urlMain": "https://chaos.social/",
+    "username_claimed": "rixx"
+  },
+  "interpals": {
+    "errorMsg": "The requested user does not exist or is inactive",
+    "errorType": "message",
+    "url": "https://www.interpals.net/{}",
+    "urlMain": "https://www.interpals.net/",
+    "username_claimed": "blue"
+  },
+  "kaskus": {
+    "errorType": "status_code",
+    "url": "https://www.kaskus.co.id/@{}",
+    "urlMain": "https://www.kaskus.co.id/",
+    "username_claimed": "l0mbart"
+  },
+  "social.tchncs.de": {
+    "errorType": "status_code",
+    "url": "https://social.tchncs.de/@{}",
+    "urlMain": "https://social.tchncs.de/",
+    "username_claimed": "Milan"
+  },
+  "uid": {
+    "errorType": "status_code",
+    "url": "http://uid.me/{}",
+    "urlMain": "https://uid.me/",
+    "username_claimed": "blue"
+  }
+}

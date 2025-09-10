@@ -1,0 +1,147 @@
+﻿{
+  "$schema": "data.schema.json",
+  "2Dimensions": {
+    "errorType": "status_code",
+    "url": "https://2Dimensions.com/a/{}",
+    "urlMain": "https://2Dimensions.com/",
+    "username_claimed": "blue"
+  },
+  "Behance": {
+    "errorType": "status_code",
+    "url": "https://www.behance.net/{}",
+    "urlMain": "https://www.behance.net/",
+    "username_claimed": "blue"
+  },
+  "Blipfoto": {
+    "errorType": "status_code",
+    "url": "https://www.blipfoto.com/{}",
+    "urlMain": "https://www.blipfoto.com/",
+    "username_claimed": "blue"
+  },
+  "CGTrader": {
+    "errorType": "status_code",
+    "regexCheck": "^[^.]*?$",
+    "url": "https://www.cgtrader.com/{}",
+    "urlMain": "https://www.cgtrader.com",
+    "username_claimed": "blue"
+  },
+  "Carbonmade": {
+    "errorType": "response_url",
+    "errorUrl": "https://carbonmade.com/fourohfour?domain={}.carbonmade.com",
+    "regexCheck": "^[\\w@-]+?$",
+    "url": "https://{}.carbonmade.com",
+    "urlMain": "https://carbonmade.com/",
+    "username_claimed": "jenny"
+  },
+  "ColourLovers": {
+    "errorType": "status_code",
+    "url": "https://www.colourlovers.com/lover/{}",
+    "urlMain": "https://www.colourlovers.com/",
+    "username_claimed": "blue"
+  },
+  "Contently": {
+    "errorType": "response_url",
+    "errorUrl": "https://contently.com",
+    "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
+    "url": "https://{}.contently.com/",
+    "urlMain": "https://contently.com/",
+    "username_claimed": "jordanteicher"
+  },
+  "Coroflot": {
+    "errorType": "status_code",
+    "url": "https://www.coroflot.com/{}",
+    "urlMain": "https://coroflot.com/",
+    "username_claimed": "blue"
+  },
+  "Crevado": {
+    "errorType": "status_code",
+    "regexCheck": "^[\\w@-]+?$",
+    "url": "https://{}.crevado.com",
+    "urlMain": "https://crevado.com/",
+    "username_claimed": "blue"
+  },
+  "Cults3D": {
+    "errorMsg": "Oh dear, this page is not working!",
+    "errorType": "message",
+    "url": "https://cults3d.com/en/users/{}/creations",
+    "urlMain": "https://cults3d.com/en",
+    "username_claimed": "brown"
+  },
+  "Dribbble": {
+    "errorMsg": "Whoops, that page is gone.",
+    "errorType": "message",
+    "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
+    "url": "https://dribbble.com/{}",
+    "urlMain": "https://dribbble.com/",
+    "username_claimed": "blue"
+  },
+  "EyeEm": {
+    "errorType": "status_code",
+    "url": "https://www.eyeem.com/u/{}",
+    "urlMain": "https://www.eyeem.com/",
+    "username_claimed": "blue"
+  },
+  "Exposure": {
+    "errorType": "status_code",
+    "regexCheck": "^[a-zA-Z0-9-]{1,63}$",
+    "url": "https://{}.exposure.co/",
+    "urlMain": "https://exposure.co/",
+    "username_claimed": "jonasjacobsson"
+  },
+  "Icons8 Community": {
+    "errorType": "status_code",
+    "url": "https://community.icons8.com/u/{}/summary",
+    "urlMain": "https://community.icons8.com/",
+    "username_claimed": "thefourCraft"
+  },
+  "Issuu": {
+    "errorType": "status_code",
+    "url": "https://issuu.com/{}",
+    "urlMain": "https://issuu.com/",
+    "username_claimed": "jenny"
+  },
+  "LottieFiles": {
+    "errorType": "status_code",
+    "url": "https://lottiefiles.com/{}",
+    "urlMain": "https://lottiefiles.com/",
+    "username_claimed": "lottiefiles"
+  },
+  "MyMiniFactory": {
+    "errorType": "status_code",
+    "url": "https://www.myminifactory.com/users/{}",
+    "urlMain": "https://www.myminifactory.com/",
+    "username_claimed": "blue"
+  },
+  "Redbubble": {
+    "errorType": "status_code",
+    "url": "https://www.redbubble.com/people/{}",
+    "urlMain": "https://www.redbubble.com/",
+    "username_claimed": "blue"
+  },
+  "Sketchfab": {
+    "errorType": "status_code",
+    "url": "https://sketchfab.com/{}",
+    "urlMain": "https://sketchfab.com/",
+    "username_claimed": "blue"
+  },
+  "SmugMug": {
+    "errorType": "status_code",
+    "regexCheck": "^[a-zA-Z]{1,35}$",
+    "url": "https://{}.smugmug.com",
+    "urlMain": "https://smugmug.com",
+    "username_claimed": "winchester"
+  },
+  "ThemeForest": {
+    "errorType": "status_code",
+    "url": "https://themeforest.net/user/{}",
+    "urlMain": "https://themeforest.net/",
+    "username_claimed": "user"
+  },
+  "Unsplash": {
+    "errorType": "status_code",
+    "regexCheck": "^[a-z0-9_]{1,60}$",
+    "url": "https://unsplash.com/@{}",
+    "urlMain": "https://unsplash.com/",
+    "username_claimed": "jenny"
+  }
+}

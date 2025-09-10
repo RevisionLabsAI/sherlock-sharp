@@ -1,0 +1,15 @@
+﻿{
+  "$schema": "data.schema.json",
+  "Coinvote": {
+    "errorType": "status_code",
+    "url": "https://coinvote.cc/profile/{}",
+    "urlMain": "https://coinvote.cc/",
+    "username_claimed": "blue"
+  },
+  "Rarible": {
+    "errorType": "status_code",
+    "url": "https://rarible.com/marketplace/api/v4/urls/{}",
+    "urlMain": "https://rarible.com/",
+    "username_claimed": "blue"
+  }
+}

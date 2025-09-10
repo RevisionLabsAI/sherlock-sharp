@@ -1,0 +1,445 @@
+﻿{
+  "$schema": "data.schema.json",
+  "Asciinema": {
+    "errorType": "status_code",
+    "url": "https://asciinema.org/~{}",
+    "urlMain": "https://asciinema.org",
+    "username_claimed": "red"
+  },
+  "Ask Fedora": {
+    "errorType": "status_code",
+    "url": "https://ask.fedoraproject.org/u/{}",
+    "urlMain": "https://ask.fedoraproject.org/",
+    "username_claimed": "red"
+  },
+  "BioHacking": {
+    "errorType": "status_code",
+    "url": "https://forum.dangerousthings.com/u/{}",
+    "urlMain": "https://forum.dangerousthings.com/",
+    "username_claimed": "blue"
+  },
+  "BitBucket": {
+    "errorType": "status_code",
+    "regexCheck": "^[a-zA-Z0-9-_]{1,30}$",
+    "url": "https://bitbucket.org/{}/",
+    "urlMain": "https://bitbucket.org/",
+    "username_claimed": "white"
+  },
+  "Bitwarden Forum": {
+    "errorType": "status_code",
+    "regexCheck": "^(?![.-])[a-zA-Z0-9_.-]{3,20}$",
+    "url": "https://community.bitwarden.com/u/{}/summary",
+    "urlMain": "https://bitwarden.com/",
+    "username_claimed": "blue"
+  },
+  "BraveCommunity": {
+    "errorType": "status_code",
+    "url": "https://community.brave.com/u/{}/",
+    "urlMain": "https://community.brave.com/",
+    "username_claimed": "blue"
+  },
+  "BugCrowd": {
+    "errorType": "status_code",
+    "url": "https://bugcrowd.com/{}",
+    "urlMain": "https://bugcrowd.com/",
+    "username_claimed": "ppfeister"
+  },
+  "CSSBattle": {
+    "errorType": "status_code",
+    "url": "https://cssbattle.dev/player/{}",
+    "urlMain": "https://cssbattle.dev",
+    "username_claimed": "beo"
+  },
+  "Caddy Community": {
+    "errorType": "status_code",
+    "url": "https://caddy.community/u/{}/summary",
+    "urlMain": "https://caddy.community/",
+    "username_claimed": "taako_magnusen"
+  },
+  "CloudflareCommunity": {
+    "errorType": "status_code",
+    "url": "https://community.cloudflare.com/u/{}",
+    "urlMain": "https://community.cloudflare.com/",
+    "username_claimed": "blue"
+  },
+  "Codeberg": {
+    "errorType": "status_code",
+    "url": "https://codeberg.org/{}",
+    "urlMain": "https://codeberg.org/",
+    "username_claimed": "blue"
+  },
+  "Codecademy": {
+    "errorMsg": "This profile could not be found",
+    "errorType": "message",
+    "url": "https://www.codecademy.com/profiles/{}",
+    "urlMain": "https://www.codecademy.com/",
+    "username_claimed": "blue"
+  },
+  "Codepen": {
+    "errorType": "status_code",
+    "url": "https://codepen.io/{}",
+    "urlMain": "https://codepen.io/",
+    "username_claimed": "blue"
+  },
+  "Coders Rank": {
+    "errorMsg": "not a registered member",
+    "errorType": "message",
+    "regexCheck": "^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$",
+    "url": "https://profile.codersrank.io/user/{}/",
+    "urlMain": "https://codersrank.io/",
+    "username_claimed": "rootkit7628"
+  },
+  "Coderwall": {
+    "errorType": "status_code",
+    "url": "https://coderwall.com/{}",
+    "urlMain": "https://coderwall.com",
+    "username_claimed": "hacker"
+  },
+  "Crowdin": {
+    "errorType": "status_code",
+    "regexCheck": "^[a-zA-Z0-9._-]{2,255}$",
+    "url": "https://crowdin.com/profile/{}",
+    "urlMain": "https://crowdin.com/",
+    "username_claimed": "blue"
+  },
+  "Cryptomator Forum": {
+    "errorType": "status_code",
+    "url": "https://community.cryptomator.org/u/{}",
+    "urlMain": "https://community.cryptomator.org/",
+    "username_claimed": "michael"
+  },
+  "CyberDefenders": {
+    "errorMsg": "<title>Blue Team Training for SOC analysts and DFIR - CyberDefenders</title>",
+    "errorType": "message",
+    "regexCheck": "^[^\\/:*?\"<>|@]{3,50}$",
+    "request_method": "GET",
+    "url": "https://cyberdefenders.org/p/{}",
+    "urlMain": "https://cyberdefenders.org/",
+    "username_claimed": "mlohn"
+  },
+  "DEV Community": {
+    "errorType": "status_code",
+    "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
+    "url": "https://dev.to/{}",
+    "urlMain": "https://dev.to/",
+    "username_claimed": "blue"
+  },
+  "Discuss.Elastic.co": {
+    "errorType": "status_code",
+    "url": "https://discuss.elastic.co/u/{}",
+    "urlMain": "https://discuss.elastic.co/",
+    "username_claimed": "blue"
+  },
+  "Docker Hub": {
+    "errorType": "status_code",
+    "url": "https://hub.docker.com/u/{}/",
+    "urlMain": "https://hub.docker.com/",
+    "urlProbe": "https://hub.docker.com/v2/users/{}/",
+    "username_claimed": "blue"
+  },
+  "F3.cool": {
+    "errorType": "status_code",
+    "url": "https://f3.cool/{}/",
+    "urlMain": "https://f3.cool/",
+    "username_claimed": "blue"
+  },
+  "GNOME VCS": {
+    "errorType": "response_url",
+    "errorUrl": "https://gitlab.gnome.org/{}",
+    "regexCheck": "^(?!-)[a-zA-Z0-9_.-]{2,255}(?<!\\.)$",
+    "url": "https://gitlab.gnome.org/{}",
+    "urlMain": "https://gitlab.gnome.org/",
+    "username_claimed": "adam"
+  },
+  "GeeksforGeeks": {
+    "errorType": "status_code",
+    "url": "https://auth.geeksforgeeks.org/user/{}",
+    "urlMain": "https://www.geeksforgeeks.org/",
+    "username_claimed": "adam"
+  },
+  "GitBook": {
+    "errorType": "status_code",
+    "regexCheck": "^[\\w@-]+?$",
+    "url": "https://{}.gitbook.io/",
+    "urlMain": "https://gitbook.com/",
+    "username_claimed": "gitbook"
+  },
+  "Gitea": {
+    "errorType": "status_code",
+    "url": "https://gitea.com/{}",
+    "urlMain": "https://gitea.com/",
+    "username_claimed": "xorm"
+  },
+  "Gitee": {
+    "errorType": "status_code",
+    "url": "https://gitee.com/{}",
+    "urlMain": "https://gitee.com/",
+    "username_claimed": "wizzer"
+  },
+  "Gradle": {
+    "errorType": "status_code",
+    "regexCheck": "^(?!-)[a-zA-Z0-9-]{3,}(?<!-)$",
+    "url": "https://plugins.gradle.org/u/{}",
+    "urlMain": "https://gradle.org/",
+    "username_claimed": "jetbrains"
+  },
+  "HackTheBox": {
+    "errorType": "status_code",
+    "url": "https://forum.hackthebox.com/u/{}",
+    "urlMain": "https://forum.hackthebox.com/",
+    "username_claimed": "angar"
+  },
+  "HackenProof (Hackers)": {
+    "errorMsg": "Page not found",
+    "errorType": "message",
+    "regexCheck": "^[\\w-]{,34}$",
+    "url": "https://hackenproof.com/hackers/{}",
+    "urlMain": "https://hackenproof.com/",
+    "username_claimed": "blazezaria"
+  },
+  "HackerEarth": {
+    "errorMsg": "404. URL not found.",
+    "errorType": "message",
+    "url": "https://hackerearth.com/@{}",
+    "urlMain": "https://hackerearth.com/",
+    "username_claimed": "naveennamani877"
+  },
+  "HackerOne": {
+    "errorMsg": "Page not found",
+    "errorType": "message",
+    "url": "https://hackerone.com/{}",
+    "urlMain": "https://hackerone.com/",
+    "username_claimed": "stok"
+  },
+  "HackerRank": {
+    "errorMsg": "Something went wrong",
+    "errorType": "message",
+    "regexCheck": "^[^.]*?$",
+    "url": "https://hackerrank.com/{}",
+    "urlMain": "https://hackerrank.com/",
+    "username_claimed": "satznova"
+  },
+  "Hashnode": {
+    "errorType": "status_code",
+    "url": "https://hashnode.com/@{}",
+    "urlMain": "https://hashnode.com",
+    "username_claimed": "blue"
+  },
+  "HudsonRock": {
+    "errorMsg": "This username is not associated",
+    "errorType": "message",
+    "url": "https://cavalier.hudsonrock.com/api/json/v2/osint-tools/search-by-username?username={}",
+    "urlMain": "https://hudsonrock.com",
+    "username_claimed": "testadmin"
+  },
+  "IFTTT": {
+    "errorType": "status_code",
+    "regexCheck": "^[A-Za-z0-9]{3,35}$",
+    "url": "https://www.ifttt.com/p/{}",
+    "urlMain": "https://www.ifttt.com/",
+    "username_claimed": "blue"
+  },
+  "Instructables": {
+    "errorType": "status_code",
+    "url": "https://www.instructables.com/member/{}",
+    "urlMain": "https://www.instructables.com/",
+    "urlProbe": "https://www.instructables.com/json-api/showAuthorExists?screenName={}",
+    "username_claimed": "blue"
+  },
+  "Intigriti": {
+    "errorType": "status_code",
+    "regexCheck": "[a-z0-9_]{1,25}",
+    "request_method": "GET",
+    "url": "https://app.intigriti.com/profile/{}",
+    "urlMain": "https://app.intigriti.com",
+    "urlProbe": "https://api.intigriti.com/user/public/profile/{}",
+    "username_claimed": "blue"
+  },
+  "Ionic Forum": {
+    "errorType": "status_code",
+    "url": "https://forum.ionicframework.com/u/{}",
+    "urlMain": "https://forum.ionicframework.com/",
+    "username_claimed": "theblue222"
+  },
+  "Jellyfin Weblate": {
+    "errorType": "status_code",
+    "regexCheck": "^[a-zA-Z0-9@._-]{1,150}$",
+    "url": "https://translate.jellyfin.org/user/{}/",
+    "urlMain": "https://translate.jellyfin.org/",
+    "username_claimed": "EraYaN"
+  },
+  "Joplin Forum": {
+    "errorType": "status_code",
+    "url": "https://discourse.joplinapp.org/u/{}",
+    "urlMain": "https://discourse.joplinapp.org/",
+    "username_claimed": "laurent"
+  },
+  "LOR": {
+    "errorType": "status_code",
+    "url": "https://www.linux.org.ru/people/{}/profile",
+    "urlMain": "https://linux.org.ru/",
+    "username_claimed": "red"
+  },
+  "Nextcloud Forum": {
+    "errorType": "status_code",
+    "regexCheck": "^(?![.-])[a-zA-Z0-9_.-]{3,20}$",
+    "url": "https://help.nextcloud.com/u/{}/summary",
+    "urlMain": "https://nextcloud.com/",
+    "username_claimed": "blue"
+  },
+  "NotABug.org": {
+    "errorType": "status_code",
+    "url": "https://notabug.org/{}",
+    "urlMain": "https://notabug.org/",
+    "urlProbe": "https://notabug.org/{}/followers",
+    "username_claimed": "red"
+  },
+  "Opensource": {
+    "errorType": "status_code",
+    "url": "https://opensource.com/users/{}",
+    "urlMain": "https://opensource.com/",
+    "username_claimed": "red"
+  },
+  "Packagist": {
+    "errorType": "response_url",
+    "errorUrl": "https://packagist.org/search/?q={}&reason=vendor_not_found",
+    "url": "https://packagist.org/packages/{}/",
+    "urlMain": "https://packagist.org/",
+    "username_claimed": "psr"
+  },
+  "Pastebin": {
+    "errorMsg": "Not Found (#404)",
+    "errorType": "message",
+    "url": "https://pastebin.com/u/{}",
+    "urlMain": "https://pastebin.com/",
+    "username_claimed": "blue"
+  },
+  "PentesterLab": {
+    "errorType": "status_code",
+    "regexCheck": "^[\\w]{4,30}$",
+    "url": "https://pentesterlab.com/profile/{}",
+    "urlMain": "https://pentesterlab.com/",
+    "username_claimed": "0day"
+  },
+  "PyPi": {
+    "errorType": "status_code",
+    "url": "https://pypi.org/user/{}",
+    "urlProbe": "https://pypi.org/_includes/administer-user-include/{}",
+    "urlMain": "https://pypi.org",
+    "username_claimed": "Blue"
+  },
+  "Rclone Forum": {
+    "errorType": "status_code",
+    "url": "https://forum.rclone.org/u/{}",
+    "urlMain": "https://forum.rclone.org/",
+    "username_claimed": "ncw"
+  },
+  "Replit.com": {
+    "errorType": "status_code",
+    "url": "https://replit.com/@{}",
+    "urlMain": "https://replit.com/",
+    "username_claimed": "blue"
+  },
+  "RubyGems": {
+    "errorType": "status_code",
+    "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]{1,40}",
+    "url": "https://rubygems.org/profiles/{}",
+    "urlMain": "https://rubygems.org/",
+    "username_claimed": "blue"
+  },
+  "SublimeForum": {
+    "errorType": "status_code",
+    "url": "https://forum.sublimetext.com/u/{}",
+    "urlMain": "https://forum.sublimetext.com/",
+    "username_claimed": "blue"
+  },
+  "TryHackMe": {
+    "errorMsg": "{\"success\":false}",
+    "errorType": "message",
+    "regexCheck": "^[a-zA-Z0-9.]{1,16}$",
+    "url": "https://tryhackme.com/p/{}",
+    "urlMain": "https://tryhackme.com/",
+    "urlProbe": "https://tryhackme.com/api/user/exist/{}",
+    "username_claimed": "ashu"
+  },
+  "VirusTotal": {
+    "errorType": "status_code",
+    "request_method": "GET",
+    "url": "https://www.virustotal.com/gui/user/{}",
+    "urlMain": "https://www.virustotal.com/",
+    "urlProbe": "https://www.virustotal.com/ui/users/{}/avatar",
+    "username_claimed": "blue"
+  },
+  "WICG Forum": {
+    "errorType": "status_code",
+    "regexCheck": "^(?![.-])[a-zA-Z0-9_.-]{3,20}$",
+    "url": "https://discourse.wicg.io/u/{}/summary",
+    "urlMain": "https://discourse.wicg.io/",
+    "username_claimed": "stefano"
+  },
+  "Weblate": {
+    "errorType": "status_code",
+    "regexCheck": "^[a-zA-Z0-9@._-]{1,150}$",
+    "url": "https://hosted.weblate.org/user/{}/",
+    "urlMain": "https://hosted.weblate.org/",
+    "username_claimed": "adam"
+  },
+  "WolframalphaForum": {
+    "errorType": "status_code",
+    "url": "https://community.wolfram.com/web/{}/home",
+    "urlMain": "https://community.wolfram.com/",
+    "username_claimed": "unico"
+  },
+  "devRant": {
+    "errorType": "response_url",
+    "errorUrl": "https://devrant.com/",
+    "url": "https://devrant.com/users/{}",
+    "urlMain": "https://devrant.com/",
+    "username_claimed": "blue"
+  },
+  "fixya": {
+    "errorType": "status_code",
+    "url": "https://www.fixya.com/users/{}",
+    "urlMain": "https://www.fixya.com",
+    "username_claimed": "adam"
+  },
+  "freecodecamp": {
+    "errorType": "status_code",
+    "url": "https://www.freecodecamp.org/{}",
+    "urlMain": "https://www.freecodecamp.org/",
+    "urlProbe": "https://api.freecodecamp.org/api/users/get-public-profile?username={}",
+    "username_claimed": "naveennamani"
+  },
+  "hackster": {
+    "errorType": "status_code",
+    "url": "https://www.hackster.io/{}",
+    "urlMain": "https://www.hackster.io",
+    "username_claimed": "blue"
+  },
+  "npm": {
+    "errorType": "status_code",
+    "url": "https://www.npmjs.com/~{}",
+    "urlMain": "https://www.npmjs.com/",
+    "username_claimed": "kennethsweezy"
+  },
+  "pr0gramm": {
+    "errorType": "status_code",
+    "url": "https://pr0gramm.com/user/{}",
+    "urlMain": "https://pr0gramm.com/",
+    "urlProbe": "https://pr0gramm.com/api/profile/info?name={}",
+    "username_claimed": "cha0s"
+  },
+  "prog.hu": {
+    "errorType": "response_url",
+    "errorUrl": "https://prog.hu/azonosito/info/{}",
+    "url": "https://prog.hu/azonosito/info/{}",
+    "urlMain": "https://prog.hu/",
+    "username_claimed": "Sting"
+  },
+  "toster": {
+    "errorType": "status_code",
+    "url": "https://www.toster.ru/user/{}/answers",
+    "urlMain": "https://www.toster.ru/",
+    "username_claimed": "adam"
+  }
+}

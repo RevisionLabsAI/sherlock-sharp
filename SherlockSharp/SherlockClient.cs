@@ -61,6 +61,19 @@ public sealed class SherlockClient : IDisposable
     }
 
     /// <summary>
+    /// Get the list of available service names. By default returns only non-NSFW services.
+    /// </summary>
+    public static IReadOnlyList<string> GetServiceNames(bool includeNsfw = false)
+    {
+        var services = Internal.DataLoader.LoadServices();
+        return services
+            .Where(kv => includeNsfw || kv.Value.IsNsfw != true)
+            .Select(kv => kv.Key)
+            .OrderBy(n => n, StringComparer.OrdinalIgnoreCase)
+            .ToArray();
+    }
+
+    /// <summary>
     /// Check a single username across configured services.
     /// </summary>
     public async Task<IReadOnlyList<UsernameCheckResult>> CheckAsync(string username, CancellationToken ct = default)

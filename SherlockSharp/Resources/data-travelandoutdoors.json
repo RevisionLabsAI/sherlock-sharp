@@ -1,0 +1,118 @@
+﻿{
+  "$schema": "data.schema.json",
+  "Airliners": {
+    "errorType": "status_code",
+    "url": "https://www.airliners.net/user/{}/profile/photos",
+    "urlMain": "https://www.airliners.net/",
+    "username_claimed": "yushinlin"
+  },
+  "Autofrage": {
+    "errorType": "status_code",
+    "url": "https://www.autofrage.net/nutzer/{}",
+    "urlMain": "https://www.autofrage.net/",
+    "username_claimed": "autofrage"
+  },
+  "Car Talk Community": {
+    "errorType": "status_code",
+    "url": "https://community.cartalk.com/u/{}/summary",
+    "urlMain": "https://community.cartalk.com/",
+    "username_claimed": "always_fixing"
+  },
+  "Flightradar24": {
+    "errorType": "status_code",
+    "regexCheck": "^[a-zA-Z0-9_]{3,20}$",
+    "url": "https://my.flightradar24.com/{}",
+    "urlMain": "https://www.flightradar24.com/",
+    "username_claimed": "jebbrooks"
+  },
+  "Motorradfrage": {
+    "errorType": "status_code",
+    "url": "https://www.motorradfrage.net/nutzer/{}",
+    "urlMain": "https://www.motorradfrage.net/",
+    "username_claimed": "gutefrage"
+  },
+  "OpenStreetMap": {
+    "errorType": "status_code",
+    "regexCheck": "^[^.]*?$",
+    "url": "https://www.openstreetmap.org/user/{}",
+    "urlMain": "https://www.openstreetmap.org/",
+    "username_claimed": "blue"
+  },
+  "Pinkbike": {
+    "errorType": "status_code",
+    "regexCheck": "^[^.]*?$",
+    "url": "https://www.pinkbike.com/u/{}/",
+    "urlMain": "https://www.pinkbike.com/",
+    "username_claimed": "blue"
+  },
+  "Polarsteps": {
+    "errorType": "status_code",
+    "url": "https://polarsteps.com/{}",
+    "urlMain": "https://polarsteps.com/",
+    "urlProbe": "https://api.polarsteps.com/users/byusername/{}",
+    "username_claimed": "james"
+  },
+  "Reisefrage": {
+    "errorType": "status_code",
+    "url": "https://www.reisefrage.net/nutzer/{}",
+    "urlMain": "https://www.reisefrage.net/",
+    "username_claimed": "reisefrage"
+  },
+  "Trawelling": {
+    "errorType": "status_code",
+    "url": "https://traewelling.de/@{}",
+    "urlMain": "https://traewelling.de/",
+    "username_claimed": "lassestolley"
+  },
+  "Tweakers": {
+    "errorType": "status_code",
+    "url": "https://tweakers.net/gallery/{}",
+    "urlMain": "https://tweakers.net",
+    "username_claimed": "femme"
+  },
+  "Velomania": {
+    "errorMsg": "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
+    "errorType": "message",
+    "url": "https://forum.velomania.ru/member.php?username={}",
+    "urlMain": "https://forum.velomania.ru/",
+    "username_claimed": "red"
+  },
+  "Windy": {
+    "errorType": "status_code",
+    "url": "https://community.windy.com/user/{}",
+    "urlMain": "https://windy.com/",
+    "username_claimed": "blue"
+  },
+  "couchsurfing": {
+    "errorType": "status_code",
+    "url": "https://www.couchsurfing.com/people/{}",
+    "urlMain": "https://www.couchsurfing.com/",
+    "username_claimed": "blue"
+  },
+  "drive2": {
+    "errorType": "status_code",
+    "url": "https://www.drive2.ru/users/{}",
+    "urlMain": "https://www.drive2.ru/",
+    "username_claimed": "blue"
+  },
+  "forum_guns": {
+    "errorMsg": "action=https://forum.guns.ru/forummisc/blog/search",
+    "errorType": "message",
+    "url": "https://forum.guns.ru/forummisc/blog/{}",
+    "urlMain": "https://forum.guns.ru/",
+    "username_claimed": "red"
+  },
+  "geocaching": {
+    "errorType": "status_code",
+    "url": "https://www.geocaching.com/p/default.aspx?u={}",
+    "urlMain": "https://www.geocaching.com/",
+    "username_claimed": "blue"
+  },
+  "hunting": {
+    "errorMsg": "Указанный пользователь не найден. Пожалуйста, введите другое имя.",
+    "errorType": "message",
+    "url": "https://www.hunting.ru/forum/members/?username={}",
+    "urlMain": "https://www.hunting.ru/forum/",
+    "username_claimed": "red"
+  }
+}

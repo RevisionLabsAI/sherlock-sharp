@@ -6,12 +6,14 @@
     ],
     "errorType": "message",
     "regexCheck": "^[A-Za-z0-9]{4,12}$",
+    "category": "popular",
     "url": "https://www.1337x.to/user/{}/",
     "urlMain": "https://www.1337x.to/",
     "username_claimed": "FitGirl"
   },
   "9GAG": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://www.9gag.com/u/{}",
     "urlMain": "https://www.9gag.com/",
     "username_claimed": "blue"
@@ -19,12 +21,14 @@
   "Academia.edu": {
     "errorType": "status_code",
     "regexCheck": "^[^.]*$",
+    "category": "popular",
     "url": "https://independent.academia.edu/{}",
     "urlMain": "https://www.academia.edu/",
     "username_claimed": "blue"
   },
   "Apple Developer": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://developer.apple.com/forums/profile/{}",
     "urlMain": "https://developer.apple.com",
     "username_claimed": "lio24d"
@@ -32,6 +36,7 @@
   "Apple Discussions": {
     "errorMsg": "The page you tried was not found. You may have used an outdated link or may have typed the address (URL) incorrectly.",
     "errorType": "message",
+    "category": "popular",
     "url": "https://discussions.apple.com/profile/{}",
     "urlMain": "https://discussions.apple.com",
     "username_claimed": "jason"
@@ -44,6 +49,7 @@
       "Internet Archive services are temporarily offline"
     ],
     "errorType": "message",
+    "category": "popular",
     "url": "https://archive.org/details/@{}",
     "urlMain": "https://archive.org",
     "urlProbe": "https://archive.org/details/@{}?noscript=true",
@@ -51,18 +57,21 @@
   },
   "ArtStation": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://www.artstation.com/{}",
     "urlMain": "https://www.artstation.com/",
     "username_claimed": "Blue"
   },
   "Bandcamp": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://www.bandcamp.com/{}",
     "urlMain": "https://www.bandcamp.com/",
     "username_claimed": "blue"
   },
   "Behance": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://www.behance.net/{}",
     "urlMain": "https://www.behance.net/",
     "username_claimed": "blue"
@@ -70,12 +79,14 @@
   "Blogger": {
     "errorType": "status_code",
     "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
+    "category": "popular",
     "url": "https://{}.blogspot.com",
     "urlMain": "https://www.blogger.com/",
     "username_claimed": "blue"
   },
   "BuzzFeed": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://buzzfeed.com/{}",
     "urlMain": "https://buzzfeed.com/",
     "username_claimed": "blue"
@@ -83,12 +94,14 @@
   "CNET": {
     "errorType": "status_code",
     "regexCheck": "^[a-z].*$",
+    "category": "popular",
     "url": "https://www.cnet.com/profiles/{}/",
     "urlMain": "https://www.cnet.com/",
     "username_claimed": "melliott"
   },
   "DailyMotion": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://www.dailymotion.com/{}",
     "urlMain": "https://www.dailymotion.com/",
     "username_claimed": "blue"
@@ -96,6 +109,7 @@
   "DeviantART": {
     "errorType": "status_code",
     "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
+    "category": "popular",
     "url": "https://{}.deviantart.com",
     "urlMain": "https://deviantart.com",
     "username_claimed": "blue"
@@ -116,11 +130,13 @@
     "headers": {
       "Content-Type": "application/json"
     },
+    "category": "popular",
     "username_claimed": "blue"
   },
   "Duolingo": {
     "errorMsg": "{\"users\":[]}",
     "errorType": "message",
+    "category": "popular",
     "url": "https://www.duolingo.com/profile/{}",
     "urlMain": "https://duolingo.com/",
     "urlProbe": "https://www.duolingo.com/2017-06-30/users?username={}",
@@ -128,24 +144,28 @@
   },
   "Fandom": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://www.fandom.com/u/{}",
     "urlMain": "https://www.fandom.com/",
     "username_claimed": "Jungypoo"
   },
   "Flickr": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://www.flickr.com/people/{}",
     "urlMain": "https://www.flickr.com/",
     "username_claimed": "blue"
   },
   "Gamespot": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://www.gamespot.com/profile/{}/",
     "urlMain": "https://www.gamespot.com/",
     "username_claimed": "blue"
   },
   "GitHub": {
     "errorType": "status_code",
+    "category": "popular",
     "regexCheck": "^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$",
     "url": "https://www.github.com/{}",
     "urlMain": "https://www.github.com/",
@@ -154,6 +174,7 @@
   "GitLab": {
     "errorMsg": "[]",
     "errorType": "message",
+    "category": "popular",
     "url": "https://gitlab.com/{}",
     "urlMain": "https://gitlab.com/",
     "urlProbe": "https://gitlab.com/api/v4/users?username={}",
@@ -162,12 +183,14 @@
   "Google Play": {
     "errorMsg": "the requested URL was not found on this server",
     "errorType": "message",
+    "category": "popular",
     "url": "https://play.google.com/store/apps/developer?id={}",
     "urlMain": "https://play.google.com",
     "username_claimed": "GitHub"
   },
   "Gravatar": {
     "errorType": "status_code",
+    "category": "popular",
     "regexCheck": "^((?!\\.).)*$",
     "url": "http://en.gravatar.com/{}",
     "urlMain": "http://en.gravatar.com/",
@@ -180,24 +203,28 @@
       "Sorry."
     ],
     "errorType": "message",
+    "category": "popular",
     "url": "https://news.ycombinator.com/user?id={}",
     "urlMain": "https://news.ycombinator.com/",
     "username_claimed": "blue"
   },
   "Hackaday": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://hackaday.io/{}",
     "urlMain": "https://hackaday.io/",
     "username_claimed": "adam"
   },
   "Hugging Face": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://huggingface.co/{}",
     "urlMain": "https://huggingface.co/",
     "username_claimed": "Pasanlaksitha"
   },
   "Imgur": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://imgur.com/user/{}",
     "urlMain": "https://imgur.com/",
     "urlProbe": "https://api.imgur.com/account/v1/accounts/{}?client_id=546c25a59c58ad7",
@@ -205,6 +232,7 @@
   },
   "Instagram": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://instagram.com/{}",
     "urlMain": "https://instagram.com/",
     "urlProbe": "https://imginn.com/{}",
@@ -212,6 +240,7 @@
   },
   "Itch.io": {
     "errorType": "status_code",
+    "category": "popular",
     "regexCheck": "^[\\w@-]+?$",
     "url": "https://{}.itch.io/",
     "urlMain": "https://itch.io/",
@@ -220,6 +249,7 @@
   "Kick": {
     "__comment__": "Cloudflare. Only viable when proxied.",
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://kick.com/{}",
     "urlMain": "https://kick.com/",
     "urlProbe": "https://kick.com/api/v2/channels/{}",
@@ -227,12 +257,14 @@
   },
   "Launchpad": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://launchpad.net/~{}",
     "urlMain": "https://launchpad.net/",
     "username_claimed": "blue"
   },
   "LinkedIn": {
     "errorType": "status_code",
+    "category": "popular",
     "regexCheck": "^[a-zA-Z0-9]{3,100}$",
     "request_method": "GET",
     "url": "https://linkedin.com/in/{}",
@@ -242,6 +274,7 @@
   "Linktree": {
     "errorMsg": "\"statusCode\":404",
     "errorType": "message",
+    "category": "popular",
     "regexCheck": "^[\\w\\.]{2,30}$",
     "url": "https://linktr.ee/{}",
     "urlMain": "https://linktr.ee/",
@@ -250,6 +283,7 @@
   "Medium": {
     "errorMsg": "<body",
     "errorType": "message",
+    "category": "popular",
     "url": "https://medium.com/@{}",
     "urlMain": "https://medium.com/",
     "urlProbe": "https://medium.com/feed/@{}",
@@ -257,18 +291,21 @@
   },
   "Patreon": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://www.patreon.com/{}",
     "urlMain": "https://www.patreon.com/",
     "username_claimed": "blue"
   },
   "PlayStore": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://play.google.com/store/apps/developer?id={}",
     "urlMain": "https://play.google.com/store",
     "username_claimed": "Facebook"
   },
   "ProductHunt": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://www.producthunt.com/@{}",
     "urlMain": "https://www.producthunt.com/",
     "username_claimed": "jenny"
@@ -276,6 +313,7 @@
   "Reddit": {
     "errorMsg": "Sorry, nobody on Reddit goes by that name.",
     "errorType": "message",
+    "category": "popular",
     "headers": {
       "accept-language": "en-US,en;q=0.9"
     },
@@ -286,6 +324,7 @@
   "Roblox": {
     "errorMsg": "Page cannot be found or no longer exists",
     "errorType": "message",
+    "category": "popular",
     "url": "https://www.roblox.com/user.aspx?username={}",
     "urlMain": "https://www.roblox.com/",
     "username_claimed": "bluewolfekiller"
@@ -293,12 +332,14 @@
   "Signal": {
     "errorMsg": "Oops! That page doesn\u2019t exist or is private.",
     "errorType": "message",
+    "category": "popular",
     "url": "https://community.signalusers.org/u/{}",
     "urlMain": "https://community.signalusers.org",
     "username_claimed": "jlund"
   },
   "Slack": {
     "errorType": "status_code",
+    "category": "popular",
     "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
     "url": "https://{}.slack.com",
     "urlMain": "https://slack.com",
@@ -307,12 +348,14 @@
   "Slashdot": {
     "errorMsg": "user you requested does not exist",
     "errorType": "message",
+    "category": "popular",
     "url": "https://slashdot.org/~{}",
     "urlMain": "https://slashdot.org",
     "username_claimed": "blue"
   },
   "Snapchat": {
     "errorType": "status_code",
+    "category": "popular",
     "regexCheck": "^[a-z][a-z-_.]{3,15}",
     "request_method": "GET",
     "url": "https://www.snapchat.com/add/{}",
@@ -321,18 +364,21 @@
   },
   "SoundCloud": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://soundcloud.com/{}",
     "urlMain": "https://soundcloud.com/",
     "username_claimed": "blue"
   },
   "SourceForge": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://sourceforge.net/u/{}",
     "urlMain": "https://sourceforge.net/",
     "username_claimed": "blue"
   },
   "Spotify": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://open.spotify.com/user/{}",
     "urlMain": "https://open.spotify.com/",
     "username_claimed": "blue"
@@ -340,6 +386,7 @@
   "Steam Community (Group)": {
     "errorMsg": "No group could be retrieved for the given URL",
     "errorType": "message",
+    "category": "popular",
     "url": "https://steamcommunity.com/groups/{}",
     "urlMain": "https://steamcommunity.com/",
     "username_claimed": "blue"
@@ -347,6 +394,7 @@
   "Steam Community (User)": {
     "errorMsg": "The specified profile could not be found",
     "errorType": "message",
+    "category": "popular",
     "url": "https://steamcommunity.com/id/{}/",
     "urlMain": "https://steamcommunity.com/",
     "username_claimed": "blue"
@@ -357,6 +405,7 @@
       "If you have <strong>Telegram</strong>, you can contact <a class=\"tgme_username_link\" href=\"tg://resolve?domain="
     ],
     "errorType": "message",
+    "category": "popular",
     "regexCheck": "^[a-zA-Z0-9_]{3,32}[^_]$",
     "url": "https://t.me/{}",
     "urlMain": "https://t.me/",
@@ -365,6 +414,7 @@
   "Trello": {
     "errorMsg": "model not found",
     "errorType": "message",
+    "category": "popular",
     "url": "https://trello.com/{}",
     "urlMain": "https://trello.com/",
     "urlProbe": "https://trello.com/1/Members/{}",
@@ -376,6 +426,7 @@
       "<title>429 Too Many Requests</title>"
     ],
     "errorType": "message",
+    "category": "popular",
     "regexCheck": "^[a-zA-Z0-9_]{1,15}$",
     "url": "https://x.com/{}",
     "urlMain": "https://x.com/",
@@ -387,6 +438,7 @@
       "Venmo | Page Not Found"
     ],
     "errorType": "message",
+    "category": "popular",
     "headers": {
       "Host": "account.venmo.com"
     },
@@ -397,6 +449,7 @@
   },
   "Vimeo": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://vimeo.com/{}",
     "urlMain": "https://vimeo.com/",
     "username_claimed": "blue"
@@ -404,6 +457,7 @@
   "Wikipedia": {
     "errorMsg": "centralauth-admin-nonexistent:",
     "errorType": "message",
+    "category": "popular",
     "url": "https://en.wikipedia.org/wiki/Special:CentralAuth/{}?uselang=qqx",
     "urlMain": "https://www.wikipedia.org/",
     "username_claimed": "Hoadlck"
@@ -411,6 +465,7 @@
   "WordPress": {
     "errorType": "response_url",
     "errorUrl": "wordpress.com/typo/?subdomain=",
+    "category": "popular",
     "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
     "url": "https://{}.wordpress.com/",
     "urlMain": "https://wordpress.com",
@@ -419,12 +474,14 @@
   "WordPressOrg": {
     "errorType": "response_url",
     "errorUrl": "https://wordpress.org",
+    "category": "popular",
     "url": "https://profiles.wordpress.org/{}/",
     "urlMain": "https://wordpress.org/",
     "username_claimed": "blue"
   },
   "Xbox Gamertag": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://xboxgamertag.com/search/{}",
     "urlMain": "https://xboxgamertag.com/",
     "username_claimed": "red"
@@ -432,6 +489,7 @@
   "YouNow": {
     "errorMsg": "No users found",
     "errorType": "message",
+    "category": "popular",
     "url": "https://www.younow.com/{}/",
     "urlMain": "https://www.younow.com/",
     "urlProbe": "https://api.younow.com/php/api/broadcast/info/user={}/",
@@ -439,12 +497,14 @@
   },
   "YouPic": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://youpic.com/photographer/{}/",
     "urlMain": "https://youpic.com/",
     "username_claimed": "blue"
   },
   "YouTube": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://www.youtube.com/@{}",
     "urlMain": "https://www.youtube.com/",
     "username_claimed": "youtube"
@@ -452,36 +512,42 @@
   "kofi": {
     "errorType": "response_url",
     "errorUrl": "https://ko-fi.com/art?=redirect",
+    "category": "popular",
     "url": "https://ko-fi.com/{}",
     "urlMain": "https://ko-fi.com",
     "username_claimed": "yeahkenny"
   },
   "last.fm": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://last.fm/user/{}",
     "urlMain": "https://last.fm/",
     "username_claimed": "blue"
   },
   "mastodon.cloud": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://mastodon.cloud/@{}",
     "urlMain": "https://mastodon.cloud/",
     "username_claimed": "TheAdmin"
   },
   "mastodon.social": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://mastodon.social/@{}",
     "urlMain": "https://chaos.social/",
     "username_claimed": "Gargron"
   },
   "mastodon.xyz": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://mastodon.xyz/@{}",
     "urlMain": "https://mastodon.xyz/",
     "username_claimed": "TheKinrar"
   },
   "mstdn.io": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://mstdn.io/@{}",
     "urlMain": "https://mstdn.io/",
     "username_claimed": "blue"
@@ -489,6 +555,7 @@
   "threads": {
     "errorMsg": "<title>Threads</title>",
     "errorType": "message",
+    "category": "popular",
     "headers": {
       "Sec-Fetch-Mode": "navigate"
     },
@@ -498,6 +565,7 @@
   },
   "Bluesky": {
     "errorType": "status_code",
+    "category": "popular",
     "url": "https://bsky.app/profile/{}.bsky.social",
     "urlProbe": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={}.bsky.social",
     "urlMain": "https://bsky.app/",

@@ -10,6 +10,7 @@
         "name": "{}"
       }
     },
+    "category": "gaming",
     "url": "https://anilist.co/user/{}/",
     "urlMain": "https://anilist.co/",
     "urlProbe": "https://graphql.anilist.co/",
@@ -17,6 +18,7 @@
   },
   "Atcoder": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://atcoder.jp/users/{}",
     "urlMain": "https://atcoder.jp/",
     "username_claimed": "ksun48"
@@ -25,6 +27,7 @@
     "errorType": "message",
     "regexCheck": "^[a-zA-Z0-9_]*$",
     "errorMsg": "User not found",
+    "category": "gaming",
     "url": "https://boardgamegeek.com/user/{}",
     "urlMain": "https://boardgamegeek.com",
     "username_claimed": "blue"
@@ -33,6 +36,7 @@
     "errorMsg": "Username is valid",
     "errorType": "message",
     "regexCheck": "^[a-z1-9]{3,25}$",
+    "category": "gaming",
     "url": "https://www.chess.com/member/{}",
     "urlMain": "https://www.chess.com/",
     "urlProbe": "https://www.chess.com/callback/user/valid?username={}",
@@ -41,12 +45,14 @@
   "Codechef": {
     "errorType": "response_url",
     "errorUrl": "https://www.codechef.com/",
+    "category": "gaming",
     "url": "https://www.codechef.com/users/{}",
     "urlMain": "https://www.codechef.com/",
     "username_claimed": "blue"
   },
   "Codeforces": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://codeforces.com/profile/{}",
     "urlMain": "https://codeforces.com/",
     "urlProbe": "https://codeforces.com/api/user.info?handles={}",
@@ -54,6 +60,7 @@
   },
   "Codewars": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://www.codewars.com/users/{}",
     "urlMain": "https://www.codewars.com",
     "username_claimed": "example"
@@ -61,12 +68,14 @@
   "DMOJ": {
     "errorMsg": "No such user",
     "errorType": "message",
+    "category": "gaming",
     "url": "https://dmoj.ca/user/{}",
     "urlMain": "https://dmoj.ca/",
     "username_claimed": "junferno"
   },
   "FortniteTracker": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://fortnitetracker.com/profile/all/{}",
     "urlMain": "https://fortnitetracker.com/challenges",
     "username_claimed": "blue"
@@ -74,12 +83,14 @@
   "GaiaOnline": {
     "errorMsg": "No user ID specified or user does not exist",
     "errorType": "message",
+    "category": "gaming",
     "url": "https://www.gaiaonline.com/profiles/{}",
     "urlMain": "https://www.gaiaonline.com/",
     "username_claimed": "adam"
   },
   "Giant Bomb": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://www.giantbomb.com/profile/{}/",
     "urlMain": "https://www.giantbomb.com/",
     "username_claimed": "bob"
@@ -90,24 +101,28 @@
       "Accept": "text/html"
     },
     "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
+    "category": "gaming",
     "url": "https://www.kongregate.com/accounts/{}",
     "urlMain": "https://www.kongregate.com/",
     "username_claimed": "blue"
   },
   "LeetCode": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://leetcode.com/{}",
     "urlMain": "https://leetcode.com/",
     "username_claimed": "blue"
   },
   "Lichess": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://lichess.org/@/{}",
     "urlMain": "https://lichess.org",
     "username_claimed": "john"
   },
   "MMORPG Forum": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://forums.mmorpg.com/profile/{}",
     "urlMain": "https://forums.mmorpg.com/",
     "username_claimed": "goku"
@@ -115,12 +130,14 @@
   "Minecraft": {
     "errorCode": 204,
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://api.mojang.com/users/profiles/minecraft/{}",
     "urlMain": "https://minecraft.net/",
     "username_claimed": "blue"
   },
   "Monkeytype": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://monkeytype.com/profile/{}",
     "urlMain": "https://monkeytype.com/",
     "urlProbe": "https://api.monkeytype.com/users/{}/profile",
@@ -128,6 +145,7 @@
   },
   "MyAnimeList": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://myanimelist.net/profile/{}",
     "urlMain": "https://myanimelist.net/",
     "username_claimed": "blue"
@@ -135,6 +153,7 @@
   "Newgrounds": {
     "errorType": "status_code",
     "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
+    "category": "gaming",
     "url": "https://{}.newgrounds.com",
     "urlMain": "https://newgrounds.com",
     "username_claimed": "blue"
@@ -142,12 +161,14 @@
   "Ninja Kiwi": {
     "errorType": "response_url",
     "errorUrl": "https://ninjakiwi.com/profile/{}",
+    "category": "gaming",
     "url": "https://ninjakiwi.com/profile/{}",
     "urlMain": "https://ninjakiwi.com/",
     "username_claimed": "Kyruko"
   },
   "NintendoLife": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://www.nintendolife.com/users/{}",
     "urlMain": "https://www.nintendolife.com/",
     "username_claimed": "goku"
@@ -155,12 +176,14 @@
   "NitroType": {
     "errorMsg": "<title>Nitro Type | Competitive Typing Game | Race Your Friends</title>",
     "errorType": "message",
+    "category": "gaming",
     "url": "https://www.nitrotype.com/racer/{}",
     "urlMain": "https://www.nitrotype.com/",
     "username_claimed": "jianclash"
   },
   "Nyaa.si": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://nyaa.si/user/{}",
     "urlMain": "https://nyaa.si/",
     "username_claimed": "blue"
@@ -168,6 +191,7 @@
   "PCGamer": {
     "errorMsg": "The specified member cannot be found. Please enter a member's entire name.",
     "errorType": "message",
+    "category": "gaming",
     "url": "https://forums.pcgamer.com/members/?username={}",
     "urlMain": "https://pcgamer.com",
     "username_claimed": "admin"
@@ -175,12 +199,14 @@
   "PSNProfiles.com": {
     "errorType": "response_url",
     "errorUrl": "https://psnprofiles.com/?psnId={}",
+    "category": "gaming",
     "url": "https://psnprofiles.com/{}",
     "urlMain": "https://psnprofiles.com/",
     "username_claimed": "blue"
   },
   "Pokemon Showdown": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://pokemonshowdown.com/users/{}",
     "urlMain": "https://pokemonshowdown.com",
     "username_claimed": "blue"
@@ -188,6 +214,7 @@
   "Polymart": {
     "errorType": "response_url",
     "errorUrl": "https://polymart.org/user/-1",
+    "category": "gaming",
     "url": "https://polymart.org/user/{}",
     "urlMain": "https://polymart.org/",
     "username_claimed": "craciu25yt"
@@ -196,6 +223,7 @@
     "errorMsg": "{\"error\":\"NO_PROFILE\",\"loggedIn\":\"false\"}",
     "errorType": "message",
     "regexCheck": "^(?! )[\\w -]{1,12}(?<! )$",
+    "category": "gaming",
     "url": "https://apps.runescape.com/runemetrics/app/overview/player/{}",
     "urlMain": "https://www.runescape.com/",
     "urlProbe": "https://apps.runescape.com/runemetrics/profile/profile?user={}",
@@ -203,12 +231,14 @@
   },
   "Scratch": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://scratch.mit.edu/users/{}",
     "urlMain": "https://scratch.mit.edu/",
     "username_claimed": "griffpatch"
   },
   "Speedrun.com": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://speedrun.com/users/{}",
     "urlMain": "https://speedrun.com/",
     "username_claimed": "example"
@@ -216,12 +246,14 @@
   "Splits.io": {
     "errorType": "status_code",
     "regexCheck": "^[^.]*?$",
+    "category": "gaming",
     "url": "https://splits.io/users/{}",
     "urlMain": "https://splits.io",
     "username_claimed": "cambosteve"
   },
   "Sporcle": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://www.sporcle.com/user/{}/people",
     "urlMain": "https://www.sporcle.com/",
     "username_claimed": "blue"
@@ -229,6 +261,7 @@
   "Star Citizen": {
     "errorMsg": "404",
     "errorType": "message",
+    "category": "gaming",
     "url": "https://robertsspaceindustries.com/citizens/{}",
     "urlMain": "https://robertsspaceindustries.com/",
     "username_claimed": "blue"
@@ -236,6 +269,7 @@
   "TETR.IO": {
     "errorMsg": "No such user!",
     "errorType": "message",
+    "category": "gaming",
     "url": "https://ch.tetr.io/u/{}",
     "urlMain": "https://tetr.io",
     "urlProbe": "https://ch.tetr.io/api/users/{}",
@@ -245,6 +279,7 @@
     "errorMsg": "<title>TGx:Can't show details</title>",
     "errorType": "message",
     "regexCheck": "^[A-Za-z0-9]{3,15}$",
+    "category": "gaming",
     "url": "https://torrentgalaxy.to/profile/{}",
     "urlMain": "https://torrentgalaxy.to/",
     "username_claimed": "GalaxyRG"
@@ -252,24 +287,28 @@
   "Typeracer": {
     "errorMsg": "Profile Not Found",
     "errorType": "message",
+    "category": "gaming",
     "url": "https://data.typeracer.com/pit/profile?user={}",
     "urlMain": "https://typeracer.com",
     "username_claimed": "blue"
   },
   "VLR": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://www.vlr.gg/user/{}",
     "urlMain": "https://www.vlr.gg",
     "username_claimed": "optms"
   },
   "exophase": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://www.exophase.com/user/{}/",
     "urlMain": "https://www.exophase.com/",
     "username_claimed": "blue"
   },
   "osu!": {
     "errorType": "status_code",
+    "category": "gaming",
     "url": "https://osu.ppy.sh/users/{}",
     "urlMain": "https://osu.ppy.sh/",
     "username_claimed": "blue"

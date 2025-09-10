@@ -3,6 +3,7 @@
   "Cracked": {
     "errorType": "response_url",
     "errorUrl": "https://www.cracked.com/",
+    "category": "news-and-media",
     "url": "https://www.cracked.com/members/{}/",
     "urlMain": "https://www.cracked.com/",
     "username_claimed": "blue"
@@ -10,6 +11,7 @@
   "DigitalSpy": {
     "errorMsg": "The page you were looking for could not be found.",
     "errorType": "message",
+    "category": "news-and-media",
     "url": "https://forums.digitalspy.com/profile/{}",
     "urlMain": "https://forums.digitalspy.com/",
     "username_claimed": "blue",
@@ -18,12 +20,14 @@
   "Fanpop": {
     "errorType": "response_url",
     "errorUrl": "https://www.fanpop.com/",
+    "category": "news-and-media",
     "url": "https://www.fanpop.com/fans/{}",
     "urlMain": "https://www.fanpop.com/",
     "username_claimed": "blue"
   },
   "HubPages": {
     "errorType": "status_code",
+    "category": "news-and-media",
     "url": "https://hubpages.com/@{}",
     "urlMain": "https://hubpages.com/",
     "username_claimed": "blue"
@@ -31,12 +35,14 @@
   "Hubski": {
     "errorMsg": "No such user",
     "errorType": "message",
+    "category": "news-and-media",
     "url": "https://hubski.com/user/{}",
     "urlMain": "https://hubski.com/",
     "username_claimed": "blue"
   },
   "LessWrong": {
     "errorType": "status_code",
+    "category": "news-and-media",
     "url": "https://www.lesswrong.com/users/@{}",
     "urlMain": "https://www.lesswrong.com/",
     "username_claimed": "blue"
@@ -44,12 +50,14 @@
   "Lobsters": {
     "errorType": "status_code",
     "regexCheck": "[A-Za-z0-9][A-Za-z0-9_-]{0,24}",
+    "category": "news-and-media",
     "url": "https://lobste.rs/u/{}",
     "urlMain": "https://lobste.rs/",
     "username_claimed": "jcs"
   },
   "Polygon": {
     "errorType": "status_code",
+    "category": "news-and-media",
     "url": "https://www.polygon.com/users/{}",
     "urlMain": "https://www.polygon.com/",
     "username_claimed": "swiftstickler"
@@ -57,6 +65,7 @@
   "SoylentNews": {
     "errorMsg": "The user you requested does not exist, no matter how much you wish this might be the case.",
     "errorType": "message",
+    "category": "news-and-media",
     "url": "https://soylentnews.org/~{}",
     "urlMain": "https://soylentnews.org",
     "username_claimed": "adam"
@@ -64,6 +73,7 @@
   "dailykos": {
     "errorMsg": "{\"result\":true,\"message\":null}",
     "errorType": "message",
+    "category": "news-and-media",
     "url": "https://www.dailykos.com/user/{}",
     "urlMain": "https://www.dailykos.com",
     "urlProbe": "https://www.dailykos.com/signup/check_nickname?nickname={}",
@@ -71,24 +81,28 @@
   },
   "habr": {
     "errorType": "status_code",
+    "category": "news-and-media",
     "url": "https://habr.com/ru/users/{}",
     "urlMain": "https://habr.com/",
     "username_claimed": "blue"
   },
   "irecommend": {
     "errorType": "status_code",
+    "category": "news-and-media",
     "url": "https://irecommend.ru/users/{}",
     "urlMain": "https://irecommend.ru/",
     "username_claimed": "blue"
   },
   "jbzd.com.pl": {
     "errorType": "status_code",
+    "category": "news-and-media",
     "url": "https://jbzd.com.pl/uzytkownik/{}",
     "urlMain": "https://jbzd.com.pl/",
     "username_claimed": "blue"
   },
   "nairaland.com": {
     "errorType": "status_code",
+    "category": "news-and-media",
     "url": "https://www.nairaland.com/{}",
     "urlMain": "https://www.nairaland.com/",
     "username_claimed": "red"
@@ -96,6 +110,7 @@
   "nnRU": {
     "errorType": "status_code",
     "regexCheck": "^[\\w@-]+?$",
+    "category": "news-and-media",
     "url": "https://{}.www.nn.ru/",
     "urlMain": "https://www.nn.ru/",
     "username_claimed": "blue"
@@ -104,18 +119,21 @@
     "errorMsg": "Имя участника не найдено",
     "errorType": "message",
     "regexCheck": "^[^-]*$",
+    "category": "news-and-media",
     "url": "https://www.opennet.ru/~{}",
     "urlMain": "https://www.opennet.ru/",
     "username_claimed": "anonismus"
   },
   "pikabu": {
     "errorType": "status_code",
+    "category": "news-and-media",
     "url": "https://pikabu.ru/@{}",
     "urlMain": "https://pikabu.ru/",
     "username_claimed": "blue"
   },
   "Wykop": {
     "errorType": "status_code",
+    "category": "news-and-media",
     "url": "https://www.wykop.pl/ludzie/{}",
     "urlMain": "https://www.wykop.pl",
     "username_claimed": "blue"

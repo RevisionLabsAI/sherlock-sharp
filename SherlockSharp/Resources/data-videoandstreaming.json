@@ -1,9 +1,9 @@
-﻿
-{
+﻿{
   "$schema": "data.schema.json",
   "Giphy": {
     "errorType": "message",
     "errorMsg": "<title> GIFs - Find &amp; Share on GIPHY</title>",
+    "category": "video-and-streaming",
     "url": "https://giphy.com/{}",
     "urlMain": "https://giphy.com/",
     "username_claimed": "red"
@@ -11,12 +11,14 @@
   "Itemfix": {
     "errorMsg": "<title>ItemFix - Channel: </title>",
     "errorType": "message",
+    "category": "video-and-streaming",
     "url": "https://www.itemfix.com/c/{}",
     "urlMain": "https://www.itemfix.com/",
     "username_claimed": "blue"
   },
   "Nightbot": {
     "errorType": "status_code",
+    "category": "video-and-streaming",
     "url": "https://nightbot.tv/t/{}/commands",
     "urlMain": "https://nightbot.tv/",
     "urlProbe": "https://api.nightbot.tv/1/channels/t/{}",
@@ -24,12 +26,14 @@
   },
   "Periscope": {
     "errorType": "status_code",
+    "category": "video-and-streaming",
     "url": "https://www.periscope.tv/{}/",
     "urlMain": "https://www.periscope.tv/",
     "username_claimed": "blue"
   },
   "Rumble": {
     "errorType": "status_code",
+    "category": "video-and-streaming",
     "url": "https://rumble.com/user/{}",
     "urlMain": "https://rumble.com/",
     "username_claimed": "John"
@@ -37,6 +41,7 @@
   "SlideShare": {
     "errorType": "message",
     "errorMsg": "<title>Username available</title>",
+    "category": "video-and-streaming",
     "url": "https://slideshare.net/{}",
     "urlMain": "https://slideshare.net/",
     "username_claimed": "blue"
@@ -44,6 +49,7 @@
   "Slides": {
     "errorCode": 204,
     "errorType": "status_code",
+    "category": "video-and-streaming",
     "url": "https://slides.com/{}",
     "urlMain": "https://slides.com/",
     "username_claimed": "blue"
@@ -51,12 +57,14 @@
   "Tenor": {
     "errorType": "status_code",
     "regexCheck": "^[A-Za-z0-9_]{2,32}$",
+    "category": "video-and-streaming",
     "url": "https://tenor.com/users/{}",
     "urlMain": "https://tenor.com/",
     "username_claimed": "red"
   },
   "Velog": {
     "errorType": "status_code",
+    "category": "video-and-streaming",
     "url": "https://velog.io/@{}/posts",
     "urlMain": "https://velog.io/",
     "username_claimed": "qlgks1"

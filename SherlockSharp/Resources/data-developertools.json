@@ -262,12 +262,14 @@
   "HudsonRock": {
     "errorMsg": "This username is not associated",
     "errorType": "message",
+    "category": "developer-tools",
     "url": "https://cavalier.hudsonrock.com/api/json/v2/osint-tools/search-by-username?username={}",
     "urlMain": "https://hudsonrock.com",
     "username_claimed": "testadmin"
   },
   "IFTTT": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "regexCheck": "^[A-Za-z0-9]{3,35}$",
     "url": "https://www.ifttt.com/p/{}",
     "urlMain": "https://www.ifttt.com/",
@@ -275,6 +277,7 @@
   },
   "Instructables": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://www.instructables.com/member/{}",
     "urlMain": "https://www.instructables.com/",
     "urlProbe": "https://www.instructables.com/json-api/showAuthorExists?screenName={}",
@@ -282,6 +285,7 @@
   },
   "Intigriti": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "regexCheck": "[a-z0-9_]{1,25}",
     "request_method": "GET",
     "url": "https://app.intigriti.com/profile/{}",
@@ -291,12 +295,14 @@
   },
   "Ionic Forum": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://forum.ionicframework.com/u/{}",
     "urlMain": "https://forum.ionicframework.com/",
     "username_claimed": "theblue222"
   },
   "Jellyfin Weblate": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "regexCheck": "^[a-zA-Z0-9@._-]{1,150}$",
     "url": "https://translate.jellyfin.org/user/{}/",
     "urlMain": "https://translate.jellyfin.org/",
@@ -304,18 +310,21 @@
   },
   "Joplin Forum": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://discourse.joplinapp.org/u/{}",
     "urlMain": "https://discourse.joplinapp.org/",
     "username_claimed": "laurent"
   },
   "LOR": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://www.linux.org.ru/people/{}/profile",
     "urlMain": "https://linux.org.ru/",
     "username_claimed": "red"
   },
   "Nextcloud Forum": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "regexCheck": "^(?![.-])[a-zA-Z0-9_.-]{3,20}$",
     "url": "https://help.nextcloud.com/u/{}/summary",
     "urlMain": "https://nextcloud.com/",
@@ -323,6 +332,7 @@
   },
   "NotABug.org": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://notabug.org/{}",
     "urlMain": "https://notabug.org/",
     "urlProbe": "https://notabug.org/{}/followers",
@@ -330,12 +340,14 @@
   },
   "Opensource": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://opensource.com/users/{}",
     "urlMain": "https://opensource.com/",
     "username_claimed": "red"
   },
   "Packagist": {
     "errorType": "response_url",
+    "category": "developer-tools",
     "errorUrl": "https://packagist.org/search/?q={}&reason=vendor_not_found",
     "url": "https://packagist.org/packages/{}/",
     "urlMain": "https://packagist.org/",
@@ -344,12 +356,14 @@
   "Pastebin": {
     "errorMsg": "Not Found (#404)",
     "errorType": "message",
+    "category": "developer-tools",
     "url": "https://pastebin.com/u/{}",
     "urlMain": "https://pastebin.com/",
     "username_claimed": "blue"
   },
   "PentesterLab": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "regexCheck": "^[\\w]{4,30}$",
     "url": "https://pentesterlab.com/profile/{}",
     "urlMain": "https://pentesterlab.com/",
@@ -357,6 +371,7 @@
   },
   "PyPi": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://pypi.org/user/{}",
     "urlProbe": "https://pypi.org/_includes/administer-user-include/{}",
     "urlMain": "https://pypi.org",
@@ -364,18 +379,21 @@
   },
   "Rclone Forum": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://forum.rclone.org/u/{}",
     "urlMain": "https://forum.rclone.org/",
     "username_claimed": "ncw"
   },
   "Replit.com": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://replit.com/@{}",
     "urlMain": "https://replit.com/",
     "username_claimed": "blue"
   },
   "RubyGems": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]{1,40}",
     "url": "https://rubygems.org/profiles/{}",
     "urlMain": "https://rubygems.org/",
@@ -383,6 +401,7 @@
   },
   "SublimeForum": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://forum.sublimetext.com/u/{}",
     "urlMain": "https://forum.sublimetext.com/",
     "username_claimed": "blue"
@@ -390,6 +409,7 @@
   "TryHackMe": {
     "errorMsg": "{\"success\":false}",
     "errorType": "message",
+    "category": "developer-tools",
     "regexCheck": "^[a-zA-Z0-9.]{1,16}$",
     "url": "https://tryhackme.com/p/{}",
     "urlMain": "https://tryhackme.com/",
@@ -398,6 +418,7 @@
   },
   "VirusTotal": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "request_method": "GET",
     "url": "https://www.virustotal.com/gui/user/{}",
     "urlMain": "https://www.virustotal.com/",
@@ -406,6 +427,7 @@
   },
   "WICG Forum": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "regexCheck": "^(?![.-])[a-zA-Z0-9_.-]{3,20}$",
     "url": "https://discourse.wicg.io/u/{}/summary",
     "urlMain": "https://discourse.wicg.io/",
@@ -413,6 +435,7 @@
   },
   "Weblate": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "regexCheck": "^[a-zA-Z0-9@._-]{1,150}$",
     "url": "https://hosted.weblate.org/user/{}/",
     "urlMain": "https://hosted.weblate.org/",
@@ -420,12 +443,14 @@
   },
   "WolframalphaForum": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://community.wolfram.com/web/{}/home",
     "urlMain": "https://community.wolfram.com/",
     "username_claimed": "unico"
   },
   "devRant": {
     "errorType": "response_url",
+    "category": "developer-tools",
     "errorUrl": "https://devrant.com/",
     "url": "https://devrant.com/users/{}",
     "urlMain": "https://devrant.com/",
@@ -433,12 +458,14 @@
   },
   "fixya": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://www.fixya.com/users/{}",
     "urlMain": "https://www.fixya.com",
     "username_claimed": "adam"
   },
   "freecodecamp": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://www.freecodecamp.org/{}",
     "urlMain": "https://www.freecodecamp.org/",
     "urlProbe": "https://api.freecodecamp.org/api/users/get-public-profile?username={}",
@@ -446,18 +473,21 @@
   },
   "hackster": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://www.hackster.io/{}",
     "urlMain": "https://www.hackster.io",
     "username_claimed": "blue"
   },
   "npm": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://www.npmjs.com/~{}",
     "urlMain": "https://www.npmjs.com/",
     "username_claimed": "kennethsweezy"
   },
   "pr0gramm": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://pr0gramm.com/user/{}",
     "urlMain": "https://pr0gramm.com/",
     "urlProbe": "https://pr0gramm.com/api/profile/info?name={}",
@@ -465,6 +495,7 @@
   },
   "prog.hu": {
     "errorType": "response_url",
+    "category": "developer-tools",
     "errorUrl": "https://prog.hu/azonosito/info/{}",
     "url": "https://prog.hu/azonosito/info/{}",
     "urlMain": "https://prog.hu/",
@@ -472,6 +503,7 @@
   },
   "toster": {
     "errorType": "status_code",
+    "category": "developer-tools",
     "url": "https://www.toster.ru/user/{}/answers",
     "urlMain": "https://www.toster.ru/",
     "username_claimed": "adam"

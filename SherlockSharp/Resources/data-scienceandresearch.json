@@ -4,24 +4,28 @@
   "Clozemaster": {
     "errorMsg": "Oh no! Player not found.",
     "errorType": "message",
+    "category": "science-and-research",
     "url": "https://www.clozemaster.com/players/{}",
     "urlMain": "https://www.clozemaster.com",
     "username_claimed": "green"
   },
   "GetMyUni": {
     "errorType": "status_code",
+    "category": "science-and-research",
     "url": "https://www.getmyuni.com/user/{}",
     "urlMain": "https://getmyuni.com/",
     "username_claimed": "Upneet.Grover17"
   },
   "Kaggle": {
     "errorType": "status_code",
+    "category": "science-and-research",
     "url": "https://www.kaggle.com/{}",
     "urlMain": "https://www.kaggle.com/",
     "username_claimed": "dansbecker"
   },
   "Memrise": {
     "errorType": "status_code",
+    "category": "science-and-research",
     "url": "https://www.memrise.com/user/{}/",
     "urlMain": "https://www.memrise.com/",
     "username_claimed": "blue"
@@ -29,6 +33,7 @@
   "Mydramalist": {
     "errorMsg": "Sign in - MyDramaList",
     "errorType": "message",
+    "category": "science-and-research",
     "url": "https://www.mydramalist.com/profile/{}",
     "urlMain": "https://mydramalist.com",
     "username_claimed": "elhadidy12398"
@@ -37,18 +42,21 @@
     "errorType": "response_url",
     "errorUrl": "https://www.researchgate.net/directory/profiles",
     "regexCheck": "\\w+_\\w+",
+    "category": "science-and-research",
     "url": "https://www.researchgate.net/profile/{}",
     "urlMain": "https://www.researchgate.net/",
     "username_claimed": "John_Smith"
   },
   "satsisRU": {
     "errorType": "status_code",
+    "category": "science-and-research",
     "url": "https://satsis.info/user/{}",
     "urlMain": "https://satsis.info/",
     "username_claimed": "red"
   },
   "svidbook": {
     "errorType": "status_code",
+    "category": "science-and-research",
     "url": "https://www.svidbook.ru/user/{}",
     "urlMain": "https://www.svidbook.ru/",
     "username_claimed": "green"

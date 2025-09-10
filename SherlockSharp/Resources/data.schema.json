@@ -12,6 +12,32 @@
       "description": "Target name and associated information (key should be human readable name)",
       "required": [ "url", "urlMain", "errorType", "username_claimed" ],
       "properties": {
+        "category": {
+          "type": "string",
+          "description": "High-level category of the site",
+          "enum": [
+            "popular",
+            "social-media",
+            "news-and-media",
+            "gaming",
+            "music-and-audio",
+            "art-and-design",
+            "books-and-writing",
+            "video-and-streaming",
+            "e-commerce",
+            "developer-tools",
+            "science-and-research",
+            "finance-and-business",
+            "health-and-wellness",
+            "travel-and-outdoors",
+            "crypto-and-blockchain",
+            "communication",
+            "movies-and-tv",
+            "sports",
+            "adult",
+            "other"
+          ]
+        },
         "url": { "type": "string" },
         "urlMain": { "type": "string" },
         "urlProbe": { "type": "string" },

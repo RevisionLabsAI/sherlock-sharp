@@ -27,7 +27,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- Correct embedded data.json path -->
+    <!-- Embed Sherlock data files -->
+    <EmbeddedResource Include="Resources\*.json" />
 
     <!-- Pack README and LICENSE into the root of the package -->
     <None Include="..\README.md" Pack="true" PackagePath="" />

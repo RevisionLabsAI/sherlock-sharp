@@ -17,9 +17,9 @@ public class SherlockClientTests
     {
         return new Dictionary<string, ServiceDefinition>(StringComparer.OrdinalIgnoreCase)
         {
-            ["alpha"] = new ServiceDefinition { Url = "https://example.com/alpha/{}", ErrorType = "status_code", IsNsfw = false },
-            ["beta"] = new ServiceDefinition { Url = "https://example.com/beta/{}", ErrorType = "message", ErrorMsg = new[]{"Not found","no user"}, IsNsfw = true },
-            ["gamma"] = new ServiceDefinition { Url = "https://example.com/gamma/{}", ErrorType = "status_code", IsNsfw = false },
+            ["alpha"] = { Url = "https://example.com/alpha/{}", ErrorType = "status_code" },
+            ["beta"] = { Url = "https://example.com/beta/{}", ErrorType = "message", ErrorMsg = new[]{"Not found","no user"} },
+            ["gamma"] = { Url = "https://example.com/gamma/{}", ErrorType = "status_code" }
         };
     }
 
@@ -28,7 +28,7 @@ public class SherlockClientTests
     public async Task CheckAsync_Throws_On_Empty_Username()
     {
         var services = MakeServices();
-        using var client = new SherlockClient(null, null, false, new FakeHttpMessageHandler(_ => new FakeHttpMessageHandler.Response()), services);
+        using var client = new SherlockClient(null, null, new FakeHttpMessageHandler(_ => new FakeHttpMessageHandler.Response()), services);
         await Assert.ThrowsAsync<ArgumentException>(() => client.CheckAsync(" "));
     }
 
@@ -44,9 +44,9 @@ public class SherlockClientTests
                 StatusCode = url.Contains("alpha/") ? HttpStatusCode.OK : HttpStatusCode.NotFound
             };
         });
-        using var client = new SherlockClient(null, TimeSpan.FromSeconds(10), false, handler, services);
+        using var client = new SherlockClient(null, TimeSpan.FromSeconds(10), handler, services);
         var results = await client.CheckAsync("john");
-        results.Should().HaveCount(2); // beta is NSFW excluded
+        results.Should().HaveCount(3); // NSFW no longer excluded
         results.Single(r=>r.ServiceName=="alpha").Found.Should().BeTrue();
         results.Single(r=>r.ServiceName=="gamma").Found.Should().BeFalse();
     }
@@ -62,7 +62,7 @@ public class SherlockClientTests
                 return new FakeHttpMessageHandler.Response { StatusCode = HttpStatusCode.OK, Content = "User Not Found" };
             return new FakeHttpMessageHandler.Response { StatusCode = HttpStatusCode.OK };
         });
-        using var client = new SherlockClient(new[]{"beta"}, TimeSpan.FromSeconds(10), includeNsfw:true, handler, services);
+        using var client = new SherlockClient(new[]{"beta"}, TimeSpan.FromSeconds(10), handler, services);
         var results = await client.CheckAsync("jane");
         results.Should().HaveCount(1);
         results[0].ServiceName.Should().Be("beta");
@@ -74,7 +74,7 @@ public class SherlockClientTests
     {
         var services = MakeServices();
         var handler = new FakeHttpMessageHandler(_ => new FakeHttpMessageHandler.Response{ StatusCode = HttpStatusCode.OK});
-        using var client = new SherlockClient(new[]{"gamma"}, TimeSpan.FromSeconds(10), false, handler, services);
+        using var client = new SherlockClient(new[]{"gamma"}, TimeSpan.FromSeconds(10), handler, services);
         var results = await client.CheckAsync("foo");
         results.Select(r=>r.ServiceName).Should().BeEquivalentTo(new[]{"gamma"});
     }
@@ -84,7 +84,7 @@ public class SherlockClientTests
     {
         var services = MakeServices();
         var handler = new FakeHttpMessageHandler(_ => new FakeHttpMessageHandler.Response{ StatusCode = HttpStatusCode.OK});
-        using var client = new SherlockClient(new[]{"alpha"}, TimeSpan.FromSeconds(10), false, handler, services);
+        using var client = new SherlockClient(new[]{"alpha"}, TimeSpan.FromSeconds(10), handler, services);
         var dict = await client.CheckManyAsync(new[]{"a","b"});
         dict.Keys.Should().BeEquivalentTo(new[]{"a","b"});
         dict["a"].Should().HaveCount(1);
@@ -96,7 +96,7 @@ public class SherlockClientTests
     {
         var services = MakeServices();
         var handler = new FakeHttpMessageHandler(_ => new FakeHttpMessageHandler.Response{ StatusCode = HttpStatusCode.OK, Delay = TimeSpan.FromMilliseconds(200)});
-        using var client = new SherlockClient(new[]{"alpha"}, TimeSpan.FromMilliseconds(50), false, handler, services);
+        using var client = new SherlockClient(new[]{"alpha"}, TimeSpan.FromMilliseconds(50), handler, services);
         var res = await client.CheckAsync("slow");
         res.Should().ContainSingle();
         res[0].Note.Should().Be("timeout");
@@ -108,7 +108,7 @@ public class SherlockClientTests
     {
         var services = MakeServices();
         var badHandler = new ThrowingHandler();
-        using var client = new SherlockClient(new[]{"alpha"}, TimeSpan.FromSeconds(1), false, badHandler, services);
+        using var client = new SherlockClient(new[]{"alpha"}, TimeSpan.FromSeconds(1), badHandler, services);
         var res = await client.CheckAsync("boom");
         res[0].Note.Should().Be(nameof(InvalidOperationException));
         res[0].Found.Should().BeFalse();

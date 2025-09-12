@@ -17,17 +17,18 @@ public sealed class SherlockClient : IDisposable
     private readonly HttpClient _http;
     private readonly IReadOnlyDictionary<string, ServiceDefinition> _services;
     private readonly HashSet<string> _selected;
-    private readonly bool _includeNsfw;
 
     /// <summary>
-    /// Create a client with optional set of services to check. If null or empty, all non-NSFW services are used.
+    /// Create a client with optional set of services to check. If null or empty, all services are used.
     /// </summary>
-    public SherlockClient(IEnumerable<string>? services = null, TimeSpan? timeout = null, bool includeNsfw = false, HttpMessageHandler? handler = null)
+    public SherlockClient(
+        IEnumerable<string>? services = null, 
+        TimeSpan? timeout = null, 
+        HttpMessageHandler? handler = null)
     {
-        _includeNsfw = includeNsfw;
         _http = handler != null ? new HttpClient(handler) : new HttpClient();
         _http.Timeout = timeout ?? TimeSpan.FromSeconds(30);
-        _http.DefaultRequestHeaders.UserAgent.ParseAdd("SherlockSharp/0.1 (+https://github.com/your-org/SherlockSharp)");
+        _http.DefaultRequestHeaders.UserAgent.ParseAdd("SherlockSharp/0.1 (+https://github.com/RevisionLabsAI/SherlockSharp)");
         _services = DataLoader.LoadServices();
         _selected = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
         if (services != null)
@@ -36,13 +37,16 @@ public sealed class SherlockClient : IDisposable
         }
     }
 
-    // Internal testing-only constructor allowing services injection without touching embedded resources.
-    internal SherlockClient(IEnumerable<string>? services, TimeSpan? timeout, bool includeNsfw, HttpMessageHandler? handler, IReadOnlyDictionary<string, ServiceDefinition> servicesOverride)
+    // Testing constructor allowing services injection; kept public for test project usage.
+    public SherlockClient(
+        IEnumerable<string>? services, 
+        TimeSpan? timeout, 
+        HttpMessageHandler? handler, 
+        IReadOnlyDictionary<string, ServiceDefinition> servicesOverride)
     {
-        _includeNsfw = includeNsfw;
         _http = handler != null ? new HttpClient(handler) : new HttpClient();
         _http.Timeout = timeout ?? TimeSpan.FromSeconds(30);
-        _http.DefaultRequestHeaders.UserAgent.ParseAdd("SherlockSharp/0.1 (+https://github.com/your-org/SherlockSharp)");
+        _http.DefaultRequestHeaders.UserAgent.ParseAdd("SherlockSharp/0.1 (+https://github.com/RevisionLabsAI/SherlockSharp)");
         _services = servicesOverride ?? throw new ArgumentNullException(nameof(servicesOverride));
         _selected = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
         if (services != null)
@@ -50,24 +54,27 @@ public sealed class SherlockClient : IDisposable
             foreach (var s in services) _selected.Add(s);
         }
     }
-
+    
     /// <summary>
     /// Static convenience call without managing a client instance.
     /// </summary>
-    public static Task<IReadOnlyList<UsernameCheckResult>> CheckAsync(string username, IEnumerable<string>? services = null, TimeSpan? timeout = null, bool includeNsfw = false, CancellationToken ct = default)
+    public static Task<IReadOnlyList<UsernameCheckResult>> CheckAsync(
+        string username, 
+        IEnumerable<string>? services = null, 
+        TimeSpan? timeout = null, 
+        CancellationToken ct = default)
     {
-        using var client = new SherlockClient(services, timeout, includeNsfw);
+        using var client = new SherlockClient(services, timeout);
         return client.CheckAsync(username, ct);
     }
 
     /// <summary>
-    /// Get the list of available service names. By default returns only non-NSFW services.
+    /// Get the list of available service names. Returns all services.
     /// </summary>
-    public static IReadOnlyList<string> GetServiceNames(bool includeNsfw = false)
+    public static IReadOnlyList<string> GetServiceNames()
     {
-        var services = Internal.DataLoader.LoadServices();
+        IReadOnlyDictionary<string, ServiceDefinition> services = DataLoader.LoadServices();
         return services
-            .Where(kv => includeNsfw || kv.Value.IsNsfw != true)
             .Select(kv => kv.Key)
             .OrderBy(n => n, StringComparer.OrdinalIgnoreCase)
             .ToArray();
@@ -89,9 +96,10 @@ public sealed class SherlockClient : IDisposable
     /// <summary>
     /// Check multiple usernames across configured services.
     /// </summary>
-    public async Task<IReadOnlyDictionary<string, IReadOnlyList<UsernameCheckResult>>> CheckManyAsync(IEnumerable<string> usernames, CancellationToken ct = default)
+    public async Task<IReadOnlyDictionary<string, IReadOnlyList<UsernameCheckResult>>> CheckManyAsync(
+        IEnumerable<string> usernames, CancellationToken ct = default)
     {
-        var dict = new Dictionary<string, IReadOnlyList<UsernameCheckResult>>(StringComparer.OrdinalIgnoreCase);
+        Dictionary<string, IReadOnlyList<UsernameCheckResult>> dict = new(StringComparer.OrdinalIgnoreCase);
         foreach (var u in usernames)
         {
             dict[u] = await CheckAsync(u, ct).ConfigureAwait(false);
@@ -101,33 +109,34 @@ public sealed class SherlockClient : IDisposable
 
     private Dictionary<string, ServiceDefinition> SelectServices()
     {
-        var all = _services;
-        var list = new Dictionary<string, ServiceDefinition>(StringComparer.OrdinalIgnoreCase);
+        IReadOnlyDictionary<string, ServiceDefinition> all = _services;
+        Dictionary<string, ServiceDefinition> list = new(StringComparer.OrdinalIgnoreCase);
         foreach (var kv in all)
         {
-            if (!_includeNsfw && kv.Value.IsNsfw == true) continue;
+            // NSFW filtering is ignored; include all services
             if (_selected.Count > 0 && !_selected.Contains(kv.Key)) continue;
             list[kv.Key] = kv.Value;
         }
         return list;
     }
 
-    private async Task<UsernameCheckResult> ProbeServiceAsync(string name, ServiceDefinition sd, string username, CancellationToken ct)
+    private async Task<UsernameCheckResult> ProbeServiceAsync(
+        string name, ServiceDefinition sd, string username, CancellationToken ct)
     {
-        var profileUrl = (sd.Url ?? string.Empty).Replace("{}", username);
-        var url = profileUrl;
+        string profileUrl = (sd.Url ?? string.Empty).Replace("{}", username);
+        string url = profileUrl;
         try
         {
-            using var req = new HttpRequestMessage(HttpMethod.Get, url);
-            using var resp = await _http.SendAsync(req, HttpCompletionOption.ResponseHeadersRead, ct).ConfigureAwait(false);
-            var status = (int)resp.StatusCode;
-            var body = string.Empty;
+            using HttpRequestMessage req = new(HttpMethod.Get, url);
+            using HttpResponseMessage resp = await _http.SendAsync(req, HttpCompletionOption.ResponseHeadersRead, ct).ConfigureAwait(false);
+            int status = (int)resp.StatusCode;
+            string body = string.Empty;
             if (sd.ErrorType?.Equals("message", StringComparison.OrdinalIgnoreCase) == true)
             {
                 body = await resp.Content.ReadAsStringAsync(ct).ConfigureAwait(false);
             }
 
-            var found = EvaluateFound(sd, status, body);
+            bool found = EvaluateFound(sd, status, body);
             return new UsernameCheckResult
             {
                 ServiceName = name,

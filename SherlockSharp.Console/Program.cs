@@ -8,15 +8,12 @@ var usernameArg = new Argument<string>(name: "username", description: "Username 
 
 var servicesOption = new Option<string?>(
     aliases: new[] {"--services", "-s"},
-    description: "Comma-separated list of services to check (defaults to all non-NSFW)");
+    description: "Comma-separated list of services to check (defaults to all)");
 
 var timeoutOption = new Option<int?>(
     aliases: new[] {"--timeout", "-t"},
     description: "Timeout in seconds (default 30)");
 
-var includeNsfwOption = new Option<bool>(
-    aliases: new[] {"--include-nsfw"},
-    description: "Include NSFW services", getDefaultValue: () => false);
 
 var jsonOption = new Option<bool>(
     aliases: new[] {"--json", "-j"},
@@ -26,10 +23,9 @@ var checkCmd = new Command("check", "Check a single username across services");
 checkCmd.AddArgument(usernameArg);
 checkCmd.AddOption(servicesOption);
 checkCmd.AddOption(timeoutOption);
-checkCmd.AddOption(includeNsfwOption);
 checkCmd.AddOption(jsonOption);
 
-checkCmd.SetHandler(async (username, services, timeout, includeNsfw, json) =>
+checkCmd.SetHandler(async (username, services, timeout, json) =>
 {
     var servicesList = string.IsNullOrWhiteSpace(services)
         ? null
@@ -37,7 +33,7 @@ checkCmd.SetHandler(async (username, services, timeout, includeNsfw, json) =>
 
     var timeoutSpan = timeout.HasValue ? TimeSpan.FromSeconds(Math.Max(1, timeout.Value)) : (TimeSpan?)null;
 
-    using var client = new SherlockClient(servicesList, timeoutSpan, includeNsfw);
+    using var client = new SherlockClient(servicesList, timeoutSpan);
 
     try
     {
@@ -62,17 +58,16 @@ checkCmd.SetHandler(async (username, services, timeout, includeNsfw, json) =>
         Console.Error.WriteLine($"Error: {ex.Message}");
         Environment.ExitCode = 1;
     }
-}, usernameArg, servicesOption, timeoutOption, includeNsfwOption, jsonOption);
+}, usernameArg, servicesOption, timeoutOption, jsonOption);
 
 var manyCmd = new Command("check-many", "Check multiple usernames (space-separated) across services");
 var usernamesArg = new Argument<string[]>(name: "usernames", description: "Usernames to check");
 manyCmd.AddArgument(usernamesArg);
 manyCmd.AddOption(servicesOption);
 manyCmd.AddOption(timeoutOption);
-manyCmd.AddOption(includeNsfwOption);
 manyCmd.AddOption(jsonOption);
 
-manyCmd.SetHandler(async (usernames, services, timeout, includeNsfw, json) =>
+manyCmd.SetHandler(async (usernames, services, timeout, json) =>
 {
     var servicesList = string.IsNullOrWhiteSpace(services)
         ? null
@@ -80,7 +75,7 @@ manyCmd.SetHandler(async (usernames, services, timeout, includeNsfw, json) =>
 
     var timeoutSpan = timeout.HasValue ? TimeSpan.FromSeconds(Math.Max(1, timeout.Value)) : (TimeSpan?)null;
 
-    using var client = new SherlockClient(servicesList, timeoutSpan, includeNsfw);
+    using var client = new SherlockClient(servicesList, timeoutSpan);
 
     try
     {
@@ -109,16 +104,14 @@ manyCmd.SetHandler(async (usernames, services, timeout, includeNsfw, json) =>
         Console.Error.WriteLine($"Error: {ex.Message}");
         Environment.ExitCode = 1;
     }
-}, usernamesArg, servicesOption, timeoutOption, includeNsfwOption, jsonOption);
+}, usernamesArg, servicesOption, timeoutOption, jsonOption);
 
 var listCmd = new Command("list-sites", "Output a comma-separated list of available services (sites)");
-var includeNsfwListOption = new Option<bool>(aliases: new[] {"--include-nsfw"}, description: "Include NSFW services", getDefaultValue: () => false);
-listCmd.AddOption(includeNsfwListOption);
-listCmd.SetHandler((bool includeNsfw) =>
+listCmd.SetHandler(() =>
 {
     try
     {
-        var names = SherlockClient.GetServiceNames(includeNsfw);
+        var names = SherlockClient.GetServiceNames();
         Console.WriteLine(string.Join(",", names));
     }
     catch (Exception ex)
@@ -126,7 +119,7 @@ listCmd.SetHandler((bool includeNsfw) =>
         Console.Error.WriteLine($"Error: {ex.Message}");
         Environment.ExitCode = 1;
     }
-}, includeNsfwListOption);
+});
 
 root.AddCommand(checkCmd);
 root.AddCommand(manyCmd);

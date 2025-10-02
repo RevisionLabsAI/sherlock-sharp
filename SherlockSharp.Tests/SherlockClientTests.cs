@@ -17,9 +17,9 @@ public class SherlockClientTests
     {
         return new Dictionary<string, ServiceDefinition>(StringComparer.OrdinalIgnoreCase)
         {
-            ["alpha"] = { Url = "https://example.com/alpha/{}", ErrorType = "status_code" },
-            ["beta"] = { Url = "https://example.com/beta/{}", ErrorType = "message", ErrorMsg = new[]{"Not found","no user"} },
-            ["gamma"] = { Url = "https://example.com/gamma/{}", ErrorType = "status_code" }
+            ["alpha"] = new ServiceDefinition { Url = "https://example.com/alpha/{}", ErrorType = "status_code" },
+            ["beta"] = new ServiceDefinition { Url = "https://example.com/beta/{}", ErrorType = "message", ErrorMsg = new[]{"Not found","no user"} },
+            ["gamma"] = new ServiceDefinition { Url = "https://example.com/gamma/{}", ErrorType = "status_code" }
         };
     }
 
